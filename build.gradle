@@ -1,0 +1,16 @@
+group 'com.github.kradalby'
+version '0.0.0'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { url "http://jade.tilab.com/maven" }
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.tilab.jade:jade:4.4.0'
+}
