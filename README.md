@@ -1,4 +1,4 @@
-# xploration-ontology
+# xploration-shared
 Ontology for Xploration project in Agent Based Software development, EMSE 2016
 
 
@@ -13,7 +13,7 @@ Add or insert the following entries in your build.gradle file:
     }
 
     dependencies {
-        compile 'com.github.kradalby:xploration-ontology:0.0.x'
+        compile 'com.github.kradalby:xploration-shared:0.0.x'
     }
 
 If you are using IntelliJ, remember to refresh gradle:
@@ -33,6 +33,6 @@ Add or insert the following entries in your pom.xml file:
 
     <dependency>
         <groupId>com.github.kradalby</groupId>
-        <artifactId>xploration-ontology</artifactId>
+        <artifactId>xploration-shared</artifactId>
         <version>0.0.x</version>
     </dependency>
