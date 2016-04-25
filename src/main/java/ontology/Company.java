@@ -5,7 +5,7 @@ package ontology;
 /**
 * Protege name: Company
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 13:16:08
+* @version 2016/04/25, 16:17:22
 */
 public interface Company extends jade.content.Concept {
 

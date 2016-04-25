@@ -6,11 +6,11 @@ import ontology.*;
 /**
 * Protege name: Rover
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 13:16:08
+* @version 2016/04/25, 16:17:22
 */
 public class DefaultRover implements Rover {
 
-  private static final long serialVersionUID = 7802221816354723823L;
+  private static final long serialVersionUID = 7137990424718032192L;
 
   private String _internalInstanceName = null;
 
