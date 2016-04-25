@@ -1,16 +1,16 @@
-package ontology.impl;
+package es.upm.ontology.impl;
 
 
-import ontology.*;
+import es.upm.ontology.*;
 
 /**
 * Protege name: Rover
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 16:17:22
+* @version 2016/04/25, 23:39:14
 */
 public class DefaultRover implements Rover {
 
-  private static final long serialVersionUID = 7137990424718032192L;
+  private static final long serialVersionUID = -5031586688954743472L;
 
   private String _internalInstanceName = null;
 

@@ -1,11 +1,11 @@
-package ontology;
+package es.upm.ontology;
 
 
 
 /**
 * Protege name: Registration
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 16:17:22
+* @version 2016/04/25, 23:39:14
 */
 public interface Registration extends jade.content.AgentAction {
 
