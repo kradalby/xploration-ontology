@@ -6,11 +6,11 @@ import ontology.*;
 /**
 * Protege name: Company
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 12:47:48
+* @version 2016/04/25, 13:16:08
 */
 public class DefaultCompany implements Company {
 
-  private static final long serialVersionUID = -2471660582568548082L;
+  private static final long serialVersionUID = 7802221816354723823L;
 
   private String _internalInstanceName = null;
 
@@ -46,6 +46,17 @@ public class DefaultCompany implements Company {
    }
    public String getName() {
      return this.name;
+   }
+
+   /**
+   * Protege name: capsule
+   */
+   private Capsule capsule;
+   public void setCapsule(Capsule value) { 
+    this.capsule=value;
+   }
+   public Capsule getCapsule() {
+     return this.capsule;
    }
 
 }

@@ -5,7 +5,7 @@ package ontology;
 /**
 * Protege name: Company
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 12:47:48
+* @version 2016/04/25, 13:16:08
 */
 public interface Company extends jade.content.Concept {
 
@@ -20,5 +20,11 @@ public interface Company extends jade.content.Concept {
    */
    public void setName(String value);
    public String getName();
+
+   /**
+   * Protege name: capsule
+   */
+   public void setCapsule(Capsule value);
+   public Capsule getCapsule();
 
 }

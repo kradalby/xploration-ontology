@@ -1,4 +1,4 @@
-; Mon Apr 25 12:47:45 CEST 2016
+; Mon Apr 25 13:16:05 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -40,7 +40,7 @@
 	(%3AONTOLOGYNAME "xploration")
 	(%3APACKAGE "ontology"))
 
-([RegistrationRequest] of  %3AJADE-CLASS
+([Registration] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 

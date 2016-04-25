@@ -6,11 +6,11 @@ import ontology.*;
 /**
 * Protege name: Capsule
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 12:47:48
+* @version 2016/04/25, 13:16:08
 */
 public class DefaultCapsule implements Capsule {
 
-  private static final long serialVersionUID = -2471660582568548082L;
+  private static final long serialVersionUID = 7802221816354723823L;
 
   private String _internalInstanceName = null;
 
@@ -46,6 +46,17 @@ public class DefaultCapsule implements Capsule {
    }
    public jade.core.AID getCapsule_agent() {
      return this.capsule_agent;
+   }
+
+   /**
+   * Protege name: rover
+   */
+   private Rover rover;
+   public void setRover(Rover value) { 
+    this.rover=value;
+   }
+   public Rover getRover() {
+     return this.rover;
    }
 
 }

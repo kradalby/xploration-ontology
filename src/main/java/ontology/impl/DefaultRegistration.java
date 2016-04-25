@@ -4,21 +4,21 @@ package ontology.impl;
 import ontology.*;
 
 /**
-* Protege name: RegistrationRequest
+* Protege name: Registration
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 13:00:20
+* @version 2016/04/25, 13:16:08
 */
-public class DefaultRegistrationRequest implements RegistrationRequest {
+public class DefaultRegistration implements Registration {
 
-  private static final long serialVersionUID = -3511337293539209185L;
+  private static final long serialVersionUID = 7802221816354723823L;
 
   private String _internalInstanceName = null;
 
-  public DefaultRegistrationRequest() {
+  public DefaultRegistration() {
     this._internalInstanceName = "";
   }
 
-  public DefaultRegistrationRequest(String instance_name) {
+  public DefaultRegistration(String instance_name) {
     this._internalInstanceName = instance_name;
   }
 

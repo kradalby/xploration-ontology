@@ -1,4 +1,4 @@
-; Mon Apr 25 12:47:45 CEST 2016
+; Mon Apr 25 13:16:05 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -20,9 +20,9 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[xploration-ontology_ProjectKB_Class224]
-		[xploration-ontology_ProjectKB_Class225]
-		[xploration-ontology_ProjectKB_Class226]))
+		[xploration-ontology_ProjectKB_Class278]
+		[xploration-ontology_ProjectKB_Class279]
+		[xploration-ontology_ProjectKB_Class280]))
 
 ([CLSES_TAB] of  Widget
 
@@ -697,9 +697,9 @@
 ([KB_514774_Class1] of  Map
 
 	(entries
-		[xploration-ontology_ProjectKB_Class227]
-		[xploration-ontology_ProjectKB_Class228]
-		[xploration-ontology_ProjectKB_Class229]))
+		[xploration-ontology_ProjectKB_Class281]
+		[xploration-ontology_ProjectKB_Class282]
+		[xploration-ontology_ProjectKB_Class283]))
 
 ([KB_514774_Class10] of  Boolean
 
@@ -1396,42 +1396,6 @@
 ([xploration-ontology_ProjectKB_Class22] of  Property_List
 )
 
-([xploration-ontology_ProjectKB_Class224] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([xploration-ontology_ProjectKB_Class225] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([xploration-ontology_ProjectKB_Class226] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([xploration-ontology_ProjectKB_Class227] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([xploration-ontology_ProjectKB_Class228] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([xploration-ontology_ProjectKB_Class229] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([xploration-ontology_ProjectKB_Class23] of  Widget
 
 	(is_hidden TRUE)
@@ -1456,8 +1420,44 @@
 	(property_list [xploration-ontology_ProjectKB_Class28])
 	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
+([xploration-ontology_ProjectKB_Class278] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([xploration-ontology_ProjectKB_Class279] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
 ([xploration-ontology_ProjectKB_Class28] of  Property_List
 )
+
+([xploration-ontology_ProjectKB_Class280] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([xploration-ontology_ProjectKB_Class281] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([xploration-ontology_ProjectKB_Class282] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([xploration-ontology_ProjectKB_Class283] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([xploration-ontology_ProjectKB_Class29] of  Widget
 

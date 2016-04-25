@@ -5,7 +5,7 @@ package ontology;
 /**
 * Protege name: Rover
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 12:47:48
+* @version 2016/04/25, 13:16:08
 */
 public interface Rover extends jade.content.Concept {
 

@@ -6,11 +6,11 @@ import jade.content.schema.*;
 
 /** file: XplorationOntology.java
  * @author OntologyBeanGenerator v4.1
- * @version 2016/04/25, 12:47:48
+ * @version 2016/04/25, 13:16:08
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
 
-  private static final long serialVersionUID = -2471660582568548082L;
+  private static final long serialVersionUID = 7802221816354723823L;
 
   //NAME
   public static final String ONTOLOGY_NAME = "xploration";
@@ -22,14 +22,16 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
 
 
    // VOCABULARY
-    public static final String REGISTRATIONREQUEST_COMPANY="company";
-    public static final String REGISTRATIONREQUEST="RegistrationRequest";
+    public static final String REGISTRATION_COMPANY="company";
+    public static final String REGISTRATION="Registration";
+    public static final String COMPANY_CAPSULE="capsule";
     public static final String COMPANY_NAME="name";
     public static final String COMPANY_COMPANY_AGENT="company_agent";
     public static final String COMPANY="Company";
     public static final String ROVER_ROVER_AGENT="rover_agent";
     public static final String ROVER_NAME="name";
     public static final String ROVER="Rover";
+    public static final String CAPSULE_ROVER="rover";
     public static final String CAPSULE_CAPSULE_AGENT="capsule_agent";
     public static final String CAPSULE_NAME="name";
     public static final String CAPSULE="Capsule";
@@ -50,8 +52,8 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     add(companySchema, ontology.Company.class);
 
     // adding AgentAction(s)
-    AgentActionSchema registrationRequestSchema = new AgentActionSchema(REGISTRATIONREQUEST);
-    add(registrationRequestSchema, ontology.RegistrationRequest.class);
+    AgentActionSchema registrationSchema = new AgentActionSchema(REGISTRATION);
+    add(registrationSchema, ontology.Registration.class);
 
     // adding AID(s)
 
@@ -61,11 +63,13 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     // adding fields
     capsuleSchema.add(CAPSULE_NAME, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.MANDATORY);
     capsuleSchema.add(CAPSULE_CAPSULE_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
+    capsuleSchema.add(CAPSULE_ROVER, roverSchema, ObjectSchema.OPTIONAL);
     roverSchema.add(ROVER_NAME, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.MANDATORY);
     roverSchema.add(ROVER_ROVER_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
     companySchema.add(COMPANY_COMPANY_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
     companySchema.add(COMPANY_NAME, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.MANDATORY);
-    registrationRequestSchema.add(REGISTRATIONREQUEST_COMPANY, companySchema, ObjectSchema.OPTIONAL);
+    companySchema.add(COMPANY_CAPSULE, capsuleSchema, ObjectSchema.OPTIONAL);
+    registrationSchema.add(REGISTRATION_COMPANY, companySchema, ObjectSchema.OPTIONAL);
 
     // adding name mappings
 

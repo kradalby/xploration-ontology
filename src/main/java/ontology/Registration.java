@@ -3,11 +3,11 @@ package ontology;
 
 
 /**
-* Protege name: RegistrationRequest
+* Protege name: Registration
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 13:00:20
+* @version 2016/04/25, 13:16:08
 */
-public interface RegistrationRequest extends jade.content.AgentAction {
+public interface Registration extends jade.content.AgentAction {
 
    /**
    * Protege name: company

@@ -1,4 +1,4 @@
-; Mon Apr 25 12:47:45 CEST 2016
+; Mon Apr 25 13:16:05 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -28,6 +28,11 @@
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot rover
+		(type INSTANCE)
+;+		(allowed-classes Rover)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
@@ -53,6 +58,11 @@
 	(single-slot company_agent
 		(type INSTANCE)
 ;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot capsule
+		(type INSTANCE)
+;+		(allowed-classes Capsule)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-DIRECTORY
@@ -89,6 +99,10 @@
 	(multislot %3AJADE-INCLUDED-PROPERTIES
 		(type INSTANCE)
 ;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class14
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-PACKAGE
 		(type STRING)
@@ -198,7 +212,7 @@
 	(is-a Concept)
 	(role abstract))
 
-(defclass RegistrationRequest
+(defclass Registration
 	(is-a AgentAction)
 	(role concrete)
 	(single-slot company
@@ -218,6 +232,11 @@
 	(single-slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot capsule
+		(type INSTANCE)
+;+		(allowed-classes Capsule)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Rover
@@ -243,6 +262,11 @@
 	(single-slot capsule_agent
 		(type INSTANCE)
 ;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot rover
+		(type INSTANCE)
+;+		(allowed-classes Rover)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
