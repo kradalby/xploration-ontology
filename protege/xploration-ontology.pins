@@ -1,4 +1,4 @@
-; Mon Apr 25 16:17:20 CEST 2016
+; Mon Apr 25 23:40:03 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -38,7 +38,7 @@
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
 	(%3AONTOLOGYNAME "xploration")
-	(%3APACKAGE "ontology"))
+	(%3APACKAGE "es.upm.ontology"))
 
 ([Registration] of  %3AJADE-CLASS
 
