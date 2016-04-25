@@ -1,4 +1,4 @@
-; Mon Apr 25 11:08:00 CEST 2016
+; Mon Apr 25 12:47:45 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -20,12 +20,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[xploration-ontology_ProjectKB_Class10077]
-		[xploration-ontology_ProjectKB_Class10078]
-		[xploration-ontology_ProjectKB_Class10079]))
+		[xploration-ontology_ProjectKB_Class224]
+		[xploration-ontology_ProjectKB_Class225]
+		[xploration-ontology_ProjectKB_Class226]))
 
 ([CLSES_TAB] of  Widget
 
+	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
 
 ([CREATION_TIMESTAMP_WIDGET] of  Widget
@@ -38,6 +39,7 @@
 
 ([FORMS_TAB] of  Widget
 
+	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
 
 ([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
@@ -61,10 +63,631 @@
 
 ([INSTANCES_TAB] of  Widget
 
+	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_144487_Class0] of  Map
+([KB_030955_Class100] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_030955_Class101])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_030955_Class101] of  Property_List
+
+	(properties
+		[KB_030955_Class102]
+		[KB_030955_Class103]
+		[KB_030955_Class104]
+		[KB_030955_Class105]
+		[KB_030955_Class106]
+		[KB_030955_Class107]
+		[xploration-ontology_ProjectKB_Class183]
+		[xploration-ontology_ProjectKB_Class184]))
+
+([KB_030955_Class102] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_030955_Class103] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_030955_Class104] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_030955_Class105] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_030955_Class106] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_030955_Class107] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_030955_Class108] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_030955_Class109] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_030955_Class110] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_030955_Class111] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [xploration-ontology_ProjectKB_Class185])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_030955_Class112] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [xploration-ontology_ProjectKB_Class186])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_030955_Class113] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [xploration-ontology_ProjectKB_Class187])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_030955_Class114] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_030955_Class115] of  Widget
+
+	(height 300)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_030955_Class116])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_030955_Class116] of  Property_List
+
+	(properties
+		[KB_030955_Class117]
+		[KB_030955_Class118]
+		[KB_030955_Class119]
+		[KB_030955_Class120]
+		[KB_030955_Class121]
+		[KB_030955_Class122]
+		[KB_030955_Class123]
+		[KB_030955_Class124]
+		[KB_030955_Class125]
+		[KB_030955_Class126]
+		[KB_030955_Class127]
+		[KB_030955_Class128]
+		[KB_030955_Class129]
+		[KB_030955_Class130]
+		[KB_030955_Class131]
+		[KB_030955_Class132]))
+
+([KB_030955_Class117] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots"))
+
+([KB_030955_Class118] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View selected slots at class"))
+
+([KB_030955_Class119] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create slot and attach to class"))
+
+([KB_030955_Class120] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove overrides from selected slots"))
+
+([KB_030955_Class121] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_030955_Class122] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_030955_Class123] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Move up"))
+
+([KB_030955_Class124] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Move down"))
+
+([KB_030955_Class125] of  String
+
+	(name "ButtonDescription-View selected slots")
+	(string_value "View selected slots"))
+
+([KB_030955_Class126] of  String
+
+	(name "ButtonDescription-View selected slots at class")
+	(string_value "View selected slots at class"))
+
+([KB_030955_Class127] of  String
+
+	(name "ButtonDescription-Create slot and attach to class")
+	(string_value "Create slot and attach to class"))
+
+([KB_030955_Class128] of  String
+
+	(name "ButtonDescription-Remove overrides from selected slots")
+	(string_value "Remove overrides from selected slots"))
+
+([KB_030955_Class129] of  String
+
+	(name "ButtonDescription-Add")
+	(string_value "Attach slots to class"))
+
+([KB_030955_Class130] of  String
+
+	(name "ButtonDescription-Remove")
+	(string_value "Remove selected slots from class"))
+
+([KB_030955_Class131] of  String
+
+	(name "ButtonDescription-Move up")
+	(string_value "Move selected slot up"))
+
+([KB_030955_Class132] of  String
+
+	(name "ButtonDescription-Move down")
+	(string_value "Move selected slot down"))
+
+([KB_030955_Class133] of  Property_List
+
+	(name "layout properties")
+	(properties [KB_030955_Class134]))
+
+([KB_030955_Class134] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([KB_030955_Class135] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Java super-class")
+	(name ":JADE-JAVA-BASE-CLASS")
+	(property_list [KB_030955_Class136])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 350)
+	(y 420))
+
+([KB_030955_Class136] of  Property_List
 )
+
+([KB_030955_Class137] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Additional Java Code")
+	(name ":JADE-JAVA-CODE")
+	(property_list [KB_030955_Class138])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 600)
+	(x 0)
+	(y 480))
+
+([KB_030955_Class138] of  Property_List
+)
+
+([KB_030955_Class139] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "JADE Name")
+	(name ":JADE-NAME")
+	(property_list [KB_030955_Class140])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 80)
+	(y 420))
+
+([KB_030955_Class140] of  Property_List
+)
+
+([KB_030955_Class141] of  Widget
+
+	(height 40)
+	(is_hidden FALSE)
+	(label "ignore")
+	(name ":JADE-IGNORE")
+	(property_list [KB_030955_Class142])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 70)
+	(x 0)
+	(y 440))
+
+([KB_030955_Class142] of  Property_List
+)
+
+([KB_030955_Class152] of  Map
+)
+
+([KB_030955_Class47] of  Widget
+
+	(height 578)
+	(is_hidden FALSE)
+	(name ":JADE-SLOT")
+	(property_list [KB_030955_Class48])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 714)
+	(x 0)
+	(y 0))
+
+([KB_030955_Class48] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[KB_030955_Class49]
+		[KB_030955_Class50]
+		[KB_030955_Class51]
+		[KB_030955_Class52]
+		[KB_030955_Class53]
+		[KB_030955_Class59]
+		[KB_030955_Class60]
+		[KB_030955_Class61]
+		[KB_030955_Class67]
+		[KB_030955_Class68]
+		[KB_030955_Class69]
+		[KB_030955_Class70]
+		[KB_030955_Class71]
+		[KB_030955_Class72]
+		[KB_030955_Class73]
+		[KB_030955_Class74]
+		[KB_030955_Class75]
+		[KB_030955_Class77]
+		[KB_030955_Class79]))
+
+([KB_030955_Class49] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [xploration-ontology_ProjectKB_Class161])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_030955_Class50] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [xploration-ontology_ProjectKB_Class162])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 175))
+
+([KB_030955_Class51] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([KB_030955_Class52] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_030955_Class53] of  Widget
+
+	(height 120)
+	(label "Values")
+	(name ":SLOT-VALUES")
+	(property_list [KB_030955_Class54])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_030955_Class54] of  Property_List
+
+	(properties
+		[KB_030955_Class55]
+		[KB_030955_Class56]
+		[KB_030955_Class57]
+		[KB_030955_Class58]))
+
+([KB_030955_Class55] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View the selected value"))
+
+([KB_030955_Class56] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_030955_Class57] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new value"))
+
+([KB_030955_Class58] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_030955_Class59] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([KB_030955_Class60] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([KB_030955_Class61] of  Widget
+
+	(height 150)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [KB_030955_Class62])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 120))
+
+([KB_030955_Class62] of  Property_List
+
+	(properties
+		[KB_030955_Class63]
+		[KB_030955_Class64]
+		[KB_030955_Class65]
+		[KB_030955_Class66]))
+
+([KB_030955_Class63] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View the selected value"))
+
+([KB_030955_Class64] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_030955_Class65] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create a new value"))
+
+([KB_030955_Class66] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_030955_Class67] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [xploration-ontology_ProjectKB_Class155])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_030955_Class68] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [xploration-ontology_ProjectKB_Class156])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 210))
+
+([KB_030955_Class69] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [xploration-ontology_ProjectKB_Class157])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 210))
+
+([KB_030955_Class70] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([KB_030955_Class71] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [xploration-ontology_ProjectKB_Class158])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_030955_Class72] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [xploration-ontology_ProjectKB_Class163])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 210))
+
+([KB_030955_Class73] of  Widget
+
+	(height 150)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [xploration-ontology_ProjectKB_Class164])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_030955_Class74] of  Property_List
+
+	(name "layout properties"))
+
+([KB_030955_Class75] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "JADE Name")
+	(name ":JADE-NAME")
+	(property_list [KB_030955_Class76])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 270))
+
+([KB_030955_Class76] of  Property_List
+)
+
+([KB_030955_Class77] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Anonymous")
+	(name ":JADE-UNNAMED-SLOT")
+	(property_list [KB_030955_Class78])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 125)
+	(x 260)
+	(y 280))
+
+([KB_030955_Class78] of  Property_List
+)
+
+([KB_030955_Class79] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DIRECT-DOMAIN")
+	(property_list [KB_030955_Class80])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 340))
+
+([KB_030955_Class80] of  Property_List
+
+	(properties
+		[KB_030955_Class81]
+		[KB_030955_Class82]
+		[KB_030955_Class83]
+		[KB_030955_Class84]
+		[KB_030955_Class85]
+		[KB_030955_Class86]
+		[xploration-ontology_ProjectKB_Class159]
+		[xploration-ontology_ProjectKB_Class160]))
+
+([KB_030955_Class81] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_030955_Class82] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_030955_Class83] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_030955_Class84] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_030955_Class85] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_030955_Class86] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_030955_Class98] of  Widget
+
+	(height 600)
+	(is_hidden FALSE)
+	(name ":JADE-CLASS")
+	(property_list [KB_030955_Class99])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 699)
+	(x 0)
+	(y 0))
+
+([KB_030955_Class99] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_030955_Class100]
+		[KB_030955_Class108]
+		[KB_030955_Class109]
+		[KB_030955_Class110]
+		[KB_030955_Class111]
+		[KB_030955_Class112]
+		[KB_030955_Class113]
+		[KB_030955_Class114]
+		[KB_030955_Class115]
+		[KB_030955_Class133]
+		[KB_030955_Class135]
+		[KB_030955_Class137]
+		[KB_030955_Class139]
+		[KB_030955_Class141]))
 
 ([KB_514774_Class0] of  String
 
@@ -72,7 +695,11 @@
 	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
 
 ([KB_514774_Class1] of  Map
-)
+
+	(entries
+		[xploration-ontology_ProjectKB_Class227]
+		[xploration-ontology_ProjectKB_Class228]
+		[xploration-ontology_ProjectKB_Class229]))
 
 ([KB_514774_Class10] of  Boolean
 
@@ -174,6 +801,7 @@
 	(display_hidden_classes TRUE)
 	(display_multi_parent_class_icon TRUE)
 	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
 	(undo_enabled TRUE)
 	(update_modification_slots FALSE))
 
@@ -244,15 +872,18 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
+		[KB_030955_Class98]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
-		[PAL_FORM_WIDGET])
+		[PAL_FORM_WIDGET]
+		[KB_030955_Class47])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(default_slot_metaclass ":STANDARD-SLOT")
+	(journaling_enabled FALSE)
 	(next_frame_number 0)
 	(options [option_instance])
 	(property_map [KB_514774_Class1])
@@ -262,15 +893,55 @@
 		[SLOTS_TAB]
 		[FORMS_TAB]
 		[INSTANCES_TAB]
-		[QUERIES_TAB]))
+		[QUERIES_TAB]
+		[xploration-ontology_ProjectKB_Class17]
+		[xploration-ontology_ProjectKB_Class57]
+		[xploration-ontology_ProjectKB_Class39]
+		[xploration-ontology_ProjectKB_Class71]
+		[xploration-ontology_ProjectKB_Class35]
+		[xploration-ontology_ProjectKB_Class67]
+		[xploration-ontology_ProjectKB_Class49]
+		[xploration-ontology_ProjectKB_Class37]
+		[xploration-ontology_ProjectKB_Class55]
+		[xploration-ontology_ProjectKB_Class19]
+		[xploration-ontology_ProjectKB_Class21]
+		[xploration-ontology_ProjectKB_Class15]
+		[xploration-ontology_ProjectKB_Class51]
+		[xploration-ontology_ProjectKB_Class153]
+		[xploration-ontology_ProjectKB_Class9]
+		[xploration-ontology_ProjectKB_Class47]
+		[xploration-ontology_ProjectKB_Class1]
+		[xploration-ontology_ProjectKB_Class27]
+		[xploration-ontology_ProjectKB_Class25]
+		[xploration-ontology_ProjectKB_Class5]
+		[xploration-ontology_ProjectKB_Class63]
+		[xploration-ontology_ProjectKB_Class23]
+		[xploration-ontology_ProjectKB_Class43]
+		[xploration-ontology_ProjectKB_Class69]
+		[xploration-ontology_ProjectKB_Class41]
+		[xploration-ontology_ProjectKB_Class53]
+		[xploration-ontology_ProjectKB_Class61]
+		[xploration-ontology_ProjectKB_Class65]
+		[xploration-ontology_ProjectKB_Class73]
+		[xploration-ontology_ProjectKB_Class3]
+		[xploration-ontology_ProjectKB_Class11]
+		[xploration-ontology_ProjectKB_Class33]
+		[xploration-ontology_ProjectKB_Class29]
+		[xploration-ontology_ProjectKB_Class45]
+		[xploration-ontology_ProjectKB_Class59]
+		[xploration-ontology_ProjectKB_Class7]
+		[xploration-ontology_ProjectKB_Class31]
+		[xploration-ontology_ProjectKB_Class13]))
 
 ([QUERIES_TAB] of  Widget
 
+	(is_hidden FALSE)
 	(property_list [xploration-ontology_ProjectKB_Class10075])
 	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
 
 ([SLOTS_TAB] of  Widget
 
+	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
 
 ([SOURCES] of  Property_List
@@ -598,198 +1269,6 @@
 ([xploration-ontology_ProjectKB_Class10] of  Property_List
 )
 
-([xploration-ontology_ProjectKB_Class10032] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10033] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10034])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
-
-([xploration-ontology_ProjectKB_Class10034] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10035] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10036])
-	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
-
-([xploration-ontology_ProjectKB_Class10036] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10037] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10038])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
-
-([xploration-ontology_ProjectKB_Class10038] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10039] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10040])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
-
-([xploration-ontology_ProjectKB_Class10040] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10041] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10042])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
-
-([xploration-ontology_ProjectKB_Class10042] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10043] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10044])
-	(widget_class_name "TGViztab.TGVizTab"))
-
-([xploration-ontology_ProjectKB_Class10044] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10045] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10046])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
-
-([xploration-ontology_ProjectKB_Class10046] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10047] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10048])
-	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
-
-([xploration-ontology_ProjectKB_Class10048] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10049] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10050])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
-
-([xploration-ontology_ProjectKB_Class10050] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10051] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10052])
-	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
-
-([xploration-ontology_ProjectKB_Class10052] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10053] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10054])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
-
-([xploration-ontology_ProjectKB_Class10054] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10055] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10056])
-	(widget_class_name "se.liu.ida.JessTab.JessTab"))
-
-([xploration-ontology_ProjectKB_Class10056] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10057] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10058])
-	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
-
-([xploration-ontology_ProjectKB_Class10058] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10059] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10060])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([xploration-ontology_ProjectKB_Class10060] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10061] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10062])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
-
-([xploration-ontology_ProjectKB_Class10062] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10063] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10064])
-	(widget_class_name "script.ProtegeScriptTab"))
-
-([xploration-ontology_ProjectKB_Class10064] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10065] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10066])
-	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
-
-([xploration-ontology_ProjectKB_Class10066] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10067] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10068])
-	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
-
-([xploration-ontology_ProjectKB_Class10068] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10069] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10070])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
-
-([xploration-ontology_ProjectKB_Class10070] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10071] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10072])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
-
-([xploration-ontology_ProjectKB_Class10072] of  Property_List
-)
-
-([xploration-ontology_ProjectKB_Class10073] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10074])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([xploration-ontology_ProjectKB_Class10074] of  Property_List
-)
-
 ([xploration-ontology_ProjectKB_Class10075] of  Property_List
 
 	(properties [xploration-ontology_ProjectKB_Class10076]))
@@ -797,21 +1276,6 @@
 ([xploration-ontology_ProjectKB_Class10076] of  String
 
 	(name "SearchTab_Query"))
-
-([xploration-ontology_ProjectKB_Class10077] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([xploration-ontology_ProjectKB_Class10078] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([xploration-ontology_ProjectKB_Class10079] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
 
 ([xploration-ontology_ProjectKB_Class11] of  Widget
 
@@ -837,16 +1301,78 @@
 	(property_list [xploration-ontology_ProjectKB_Class16])
 	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
 
+([xploration-ontology_ProjectKB_Class153] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [xploration-ontology_ProjectKB_Class154])
+	(widget_class_name "nl.uva.psy.swi.beangenerator.OntologyBeanGeneratorTab"))
+
+([xploration-ontology_ProjectKB_Class154] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class155] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class156] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class157] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class158] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class159] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
 ([xploration-ontology_ProjectKB_Class16] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class160] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([xploration-ontology_ProjectKB_Class161] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class162] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class163] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class164] of  Property_List
 )
 
 ([xploration-ontology_ProjectKB_Class17] of  Widget
 
-	(is_hidden TRUE)
+	(is_hidden FALSE)
 	(property_list [xploration-ontology_ProjectKB_Class18])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
 
 ([xploration-ontology_ProjectKB_Class18] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class183] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([xploration-ontology_ProjectKB_Class184] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([xploration-ontology_ProjectKB_Class185] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class186] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class187] of  Property_List
 )
 
 ([xploration-ontology_ProjectKB_Class19] of  Widget
@@ -869,6 +1395,42 @@
 
 ([xploration-ontology_ProjectKB_Class22] of  Property_List
 )
+
+([xploration-ontology_ProjectKB_Class224] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([xploration-ontology_ProjectKB_Class225] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([xploration-ontology_ProjectKB_Class226] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([xploration-ontology_ProjectKB_Class227] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([xploration-ontology_ProjectKB_Class228] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([xploration-ontology_ProjectKB_Class229] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([xploration-ontology_ProjectKB_Class23] of  Widget
 
@@ -915,11 +1477,92 @@
 ([xploration-ontology_ProjectKB_Class31] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [xploration-ontology_ProjectKB_Class10032])
+	(property_list [xploration-ontology_ProjectKB_Class32])
 	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([xploration-ontology_ProjectKB_Class32] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class33] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class34])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([xploration-ontology_ProjectKB_Class34] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class35] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class36])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([xploration-ontology_ProjectKB_Class36] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class37] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class38])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([xploration-ontology_ProjectKB_Class38] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class39] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class40])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
 
 ([xploration-ontology_ProjectKB_Class4] of  Property_List
 )
+
+([xploration-ontology_ProjectKB_Class40] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class41] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class42])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+
+([xploration-ontology_ProjectKB_Class42] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class43] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class44])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([xploration-ontology_ProjectKB_Class44] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class45] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class46])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([xploration-ontology_ProjectKB_Class46] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class47] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class48])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([xploration-ontology_ProjectKB_Class48] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class49] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class50])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([xploration-ontology_ProjectKB_Class5] of  Widget
 
@@ -927,14 +1570,125 @@
 	(property_list [xploration-ontology_ProjectKB_Class6])
 	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
 
+([xploration-ontology_ProjectKB_Class50] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class51] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class52])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([xploration-ontology_ProjectKB_Class52] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class53] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class54])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([xploration-ontology_ProjectKB_Class54] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class55] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class56])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([xploration-ontology_ProjectKB_Class56] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class57] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class58])
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
+
+([xploration-ontology_ProjectKB_Class58] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class59] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class60])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
 ([xploration-ontology_ProjectKB_Class6] of  Property_List
 )
+
+([xploration-ontology_ProjectKB_Class60] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class61] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class62])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([xploration-ontology_ProjectKB_Class62] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class63] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class64])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([xploration-ontology_ProjectKB_Class64] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class65] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class66])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([xploration-ontology_ProjectKB_Class66] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class67] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class68])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([xploration-ontology_ProjectKB_Class68] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class69] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class70])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
 ([xploration-ontology_ProjectKB_Class7] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [xploration-ontology_ProjectKB_Class8])
 	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([xploration-ontology_ProjectKB_Class70] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class71] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class72])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([xploration-ontology_ProjectKB_Class72] of  Property_List
+)
+
+([xploration-ontology_ProjectKB_Class73] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [xploration-ontology_ProjectKB_Class74])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([xploration-ontology_ProjectKB_Class74] of  Property_List
+)
 
 ([xploration-ontology_ProjectKB_Class8] of  Property_List
 )
