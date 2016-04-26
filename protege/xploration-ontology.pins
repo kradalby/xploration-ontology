@@ -1,7 +1,7 @@
-; Mon Apr 25 23:40:03 CEST 2016
+; Wed Apr 27 00:24:14 CEST 2016
 ; 
 ;+ (version "3.5")
-;+ (build "Build 660")
+;+ (build "Build 663")
 
 ([addresses] of  %3AJADE-SLOT
 
@@ -38,7 +38,7 @@
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
 	(%3AONTOLOGYNAME "xploration")
-	(%3APACKAGE "es.upm.ontology"))
+	(%3APACKAGE "ontology"))
 
 ([Registration] of  %3AJADE-CLASS
 

@@ -1,13 +1,19 @@
-package es.upm.ontology;
+package ontology;
 
 
 
 /**
 * Protege name: Capsule
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 23:39:14
+* @version 2016/04/27, 00:22:56
 */
 public interface Capsule extends jade.content.Concept {
+
+   /**
+   * Protege name: rover
+   */
+   public void setRover(Rover value);
+   public Rover getRover();
 
    /**
    * Protege name: name
@@ -20,11 +26,5 @@ public interface Capsule extends jade.content.Concept {
    */
    public void setCapsule_agent(jade.core.AID value);
    public jade.core.AID getCapsule_agent();
-
-   /**
-   * Protege name: rover
-   */
-   public void setRover(Rover value);
-   public Rover getRover();
 
 }

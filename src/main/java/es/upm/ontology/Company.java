@@ -1,11 +1,11 @@
-package es.upm.ontology;
+package ontology;
 
 
 
 /**
 * Protege name: Company
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 23:39:14
+* @version 2016/04/27, 00:22:56
 */
 public interface Company extends jade.content.Concept {
 

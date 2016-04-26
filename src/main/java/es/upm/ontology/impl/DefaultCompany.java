@@ -1,16 +1,16 @@
-package es.upm.ontology.impl;
+package ontology.impl;
 
 
-import es.upm.ontology.*;
+import ontology.*;
 
 /**
 * Protege name: Company
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 23:39:14
+* @version 2016/04/27, 00:22:56
 */
 public class DefaultCompany implements Company {
 
-  private static final long serialVersionUID = -5031586688954743472L;
+  private static final long serialVersionUID = -9176394525676978982L;
 
   private String _internalInstanceName = null;
 

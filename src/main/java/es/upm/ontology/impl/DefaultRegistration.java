@@ -1,16 +1,16 @@
-package es.upm.ontology.impl;
+package ontology.impl;
 
 
-import es.upm.ontology.*;
+import ontology.*;
 
 /**
 * Protege name: Registration
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 23:39:14
+* @version 2016/04/27, 00:22:56
 */
 public class DefaultRegistration implements Registration {
 
-  private static final long serialVersionUID = -5031586688954743472L;
+  private static final long serialVersionUID = -9176394525676978982L;
 
   private String _internalInstanceName = null;
 
@@ -29,11 +29,11 @@ public class DefaultRegistration implements Registration {
    /**
    * Protege name: company
    */
-   private Company company;
-   public void setCompany(Company value) { 
+   private String company;
+   public void setCompany(String value) { 
     this.company=value;
    }
-   public Company getCompany() {
+   public String getCompany() {
      return this.company;
    }
 

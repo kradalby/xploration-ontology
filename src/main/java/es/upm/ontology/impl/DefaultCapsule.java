@@ -1,16 +1,16 @@
-package es.upm.ontology.impl;
+package ontology.impl;
 
 
-import es.upm.ontology.*;
+import ontology.*;
 
 /**
 * Protege name: Capsule
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/25, 23:39:14
+* @version 2016/04/27, 00:22:56
 */
 public class DefaultCapsule implements Capsule {
 
-  private static final long serialVersionUID = -5031586688954743472L;
+  private static final long serialVersionUID = -9176394525676978982L;
 
   private String _internalInstanceName = null;
 
@@ -25,6 +25,17 @@ public class DefaultCapsule implements Capsule {
   public String toString() {
     return _internalInstanceName;
   }
+
+   /**
+   * Protege name: rover
+   */
+   private Rover rover;
+   public void setRover(Rover value) { 
+    this.rover=value;
+   }
+   public Rover getRover() {
+     return this.rover;
+   }
 
    /**
    * Protege name: name
@@ -46,17 +57,6 @@ public class DefaultCapsule implements Capsule {
    }
    public jade.core.AID getCapsule_agent() {
      return this.capsule_agent;
-   }
-
-   /**
-   * Protege name: rover
-   */
-   private Rover rover;
-   public void setRover(Rover value) { 
-    this.rover=value;
-   }
-   public Rover getRover() {
-     return this.rover;
    }
 
 }
