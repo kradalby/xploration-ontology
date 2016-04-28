@@ -1,16 +1,30 @@
 package es.upm.ontology.impl;
 
+import java.io.Serializable;
+import java.beans.PropertyChangeSupport;
+import java.beans.PropertyChangeListener;
 
 import es.upm.ontology.*;
 
 /**
 * Protege name: PROTOCOL_REGISTRATION
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 12:56:39
+* @version 2016/04/28, 13:52:53
 */
-public class DefaultPROTOCOL_REGISTRATION implements PROTOCOL_REGISTRATION {
+public class DefaultPROTOCOL_REGISTRATION implements PROTOCOL_REGISTRATION, Serializable {
+   // bean stuff
+   protected PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
-  private static final long serialVersionUID = -2680956990097898606L;
+   public void addPropertyChangeListener(PropertyChangeListener pcl) {
+     pcs.addPropertyChangeListener(pcl);
+   }
+
+   public void removePropertyChangeListener(PropertyChangeListener pcl) {
+     pcs.removePropertyChangeListener(pcl);
+   }
+
+
+  private static final long serialVersionUID = 2506149977661287232L;
 
   private String _internalInstanceName = null;
 

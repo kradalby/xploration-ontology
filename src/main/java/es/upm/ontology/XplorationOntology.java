@@ -6,11 +6,11 @@ import jade.content.schema.*;
 
 /** file: XplorationOntology.java
  * @author OntologyBeanGenerator v4.1
- * @version 2016/04/28, 12:56:39
+ * @version 2016/04/28, 13:52:53
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
 
-  private static final long serialVersionUID = -2680956990097898606L;
+  private static final long serialVersionUID = 2506149977661287232L;
 
   //NAME
   public static final String ONTOLOGY_NAME = "xploration";
