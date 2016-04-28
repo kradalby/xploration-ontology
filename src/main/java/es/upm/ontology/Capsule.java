@@ -1,11 +1,11 @@
-package ontology;
+package es.upm.ontology;
 
 
 
 /**
 * Protege name: Capsule
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/27, 00:22:56
+* @version 2016/04/28, 12:56:39
 */
 public interface Capsule extends jade.content.Concept {
 

@@ -1,4 +1,4 @@
-; Wed Apr 27 00:24:14 CEST 2016
+; Thu Apr 28 13:04:03 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -15,9 +15,19 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot Y
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3APACKAGE
 ;+		(comment "packagename")
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot X
+		(type FLOAT)
+		(default 0.0)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
@@ -88,6 +98,10 @@
 		(default TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot common_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot addresses
 		(type STRING)
 		(create-accessor read-write))
@@ -101,6 +115,11 @@
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-NAME
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot location
+		(type INSTANCE)
+;+		(allowed-classes Location)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot name_
@@ -126,6 +145,11 @@
 	(single-slot capsule
 		(type INSTANCE)
 ;+		(allowed-classes Capsule)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10004
+		(type SYMBOL)
+;+		(allowed-parents)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-NAME
@@ -215,11 +239,20 @@
 	(is-a Concept)
 	(role abstract))
 
-(defclass Registration
+(defclass RegistrationRequest
 	(is-a AgentAction)
 	(role concrete)
 	(single-slot company
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ReleaseCapsule
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot location
+		(type INSTANCE)
+;+		(allowed-classes Location)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -254,6 +287,20 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
+(defclass Location
+	(is-a Concept)
+	(role concrete)
+	(single-slot Y
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot X
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
 (defclass Capsule
 	(is-a Concept)
 	(role concrete)
@@ -271,6 +318,18 @@
 ;+		(allowed-classes AID)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
+
+(defclass Protocol "The common ancestor for all protocols. \nProtocols are not used in any specific way and are included so that they can be used as part of the vocabulary."
+	(is-a Concept)
+	(role abstract))
+
+(defclass PROTOCOL_RELEASE_CAPSULE
+	(is-a Protocol)
+	(role concrete))
+
+(defclass PROTOCOL_REGISTRATION
+	(is-a Protocol)
+	(role concrete))
 
 (defclass Predicate "The common ancestor for all predicates in an ontology (e.g. FatherOf...)"
 	(is-a USER)

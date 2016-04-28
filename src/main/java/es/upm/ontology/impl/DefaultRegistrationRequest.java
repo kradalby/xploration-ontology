@@ -1,24 +1,24 @@
-package ontology.impl;
+package es.upm.ontology.impl;
 
 
-import ontology.*;
+import es.upm.ontology.*;
 
 /**
-* Protege name: Registration
+* Protege name: RegistrationRequest
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/27, 00:22:56
+* @version 2016/04/28, 12:56:39
 */
-public class DefaultRegistration implements Registration {
+public class DefaultRegistrationRequest implements RegistrationRequest {
 
-  private static final long serialVersionUID = -9176394525676978982L;
+  private static final long serialVersionUID = -2680956990097898606L;
 
   private String _internalInstanceName = null;
 
-  public DefaultRegistration() {
+  public DefaultRegistrationRequest() {
     this._internalInstanceName = "";
   }
 
-  public DefaultRegistration(String instance_name) {
+  public DefaultRegistrationRequest(String instance_name) {
     this._internalInstanceName = instance_name;
   }
 

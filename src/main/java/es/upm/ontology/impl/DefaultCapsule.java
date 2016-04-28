@@ -1,16 +1,16 @@
-package ontology.impl;
+package es.upm.ontology.impl;
 
 
-import ontology.*;
+import es.upm.ontology.*;
 
 /**
 * Protege name: Capsule
 * @author OntologyBeanGenerator v4.1
-* @version 2016/04/27, 00:22:56
+* @version 2016/04/28, 12:56:39
 */
 public class DefaultCapsule implements Capsule {
 
-  private static final long serialVersionUID = -9176394525676978982L;
+  private static final long serialVersionUID = -2680956990097898606L;
 
   private String _internalInstanceName = null;
 
