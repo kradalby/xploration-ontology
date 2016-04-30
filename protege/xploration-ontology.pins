@@ -1,4 +1,4 @@
-; Thu Apr 28 13:04:03 CEST 2016
+; Sat Apr 30 12:41:00 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -41,8 +41,10 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
+	(%3ALOCATION "/Users/borismakogonyuk/Documents/Projects/Java/AgentBasedDevelopment/Shared/src/main/java")
 	(%3AONTOLOGYNAME "xploration")
-	(%3APACKAGE "es.upm.ontology"))
+	(%3APACKAGE "es.upm.ontology")
+	(%3ASUPPORT "j2se"))
 
 ([Protocol] of  %3AJADE-CLASS
 

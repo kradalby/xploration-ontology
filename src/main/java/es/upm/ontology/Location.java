@@ -1,30 +1,37 @@
 package es.upm.ontology;
 
-import java.io.Serializable;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: Location
-* @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 13:52:53
+* @author ontology bean generator
+* @version 2016/04/30, 12:54:56
 */
-public interface Location extends jade.content.Concept, Serializable {
-   // bean stuff
-   public void addPropertyChangeListener(PropertyChangeListener pcl);
-   public void removePropertyChangeListener(PropertyChangeListener pcl);
+public class Location implements Concept {
 
    /**
-   * Protege name: Y
+* Protege name: Y
    */
-   public void setY(float value);
-   public float getY();
+   private int y;
+   public void setY(int value) { 
+    this.y=value;
+   }
+   public int getY() {
+     return this.y;
+   }
 
    /**
-   * Protege name: X
+* Protege name: X
    */
-   public void setX(float value);
-   public float getX();
+   private int x;
+   public void setX(int value) { 
+    this.x=value;
+   }
+   public int getX() {
+     return this.x;
+   }
 
 }

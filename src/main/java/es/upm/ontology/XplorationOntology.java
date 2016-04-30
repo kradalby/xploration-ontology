@@ -3,18 +3,19 @@ package es.upm.ontology;
 
 import jade.content.onto.*;
 import jade.content.schema.*;
+import jade.util.leap.HashMap;
+import jade.content.lang.Codec;
+import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
- * @author OntologyBeanGenerator v4.1
- * @version 2016/04/28, 13:52:53
+ * @author ontology bean generator
+ * @version 2016/04/30, 12:54:56
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
-
-  private static final long serialVersionUID = 2506149977661287232L;
-
   //NAME
   public static final String ONTOLOGY_NAME = "xploration";
   // The singleton instance of this ontology
+  private static ReflectiveIntrospector introspect = new ReflectiveIntrospector();
   private static Ontology theInstance = new XplorationOntology();
   public static Ontology getInstance() {
      return theInstance;
@@ -79,8 +80,8 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
 
 
     // adding fields
-    locationSchema.add(LOCATION_Y, (TermSchema)getSchema(BasicOntology.FLOAT), ObjectSchema.OPTIONAL);
-    locationSchema.add(LOCATION_X, (TermSchema)getSchema(BasicOntology.FLOAT), ObjectSchema.OPTIONAL);
+    locationSchema.add(LOCATION_Y, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);
+    locationSchema.add(LOCATION_X, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);
     companySchema.add(COMPANY_COMPANY_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
     companySchema.add(COMPANY_NAME, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.MANDATORY);
     companySchema.add(COMPANY_CAPSULE, capsuleSchema, ObjectSchema.OPTIONAL);
@@ -100,4 +101,4 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
 
    }catch (java.lang.Exception e) {e.printStackTrace();}
   }
-}
+  }

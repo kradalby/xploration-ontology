@@ -1,36 +1,48 @@
 package es.upm.ontology;
 
-import java.io.Serializable;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: Capsule
-* @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 13:52:53
+* @author ontology bean generator
+* @version 2016/04/30, 12:54:56
 */
-public interface Capsule extends jade.content.Concept, Serializable {
-   // bean stuff
-   public void addPropertyChangeListener(PropertyChangeListener pcl);
-   public void removePropertyChangeListener(PropertyChangeListener pcl);
+public class Capsule implements Concept {
 
    /**
-   * Protege name: rover
+* Protege name: rover
    */
-   public void setRover(Rover value);
-   public Rover getRover();
+   private Rover rover;
+   public void setRover(Rover value) { 
+    this.rover=value;
+   }
+   public Rover getRover() {
+     return this.rover;
+   }
 
    /**
-   * Protege name: name
+* Protege name: name
    */
-   public void setName(String value);
-   public String getName();
+   private String name;
+   public void setName(String value) { 
+    this.name=value;
+   }
+   public String getName() {
+     return this.name;
+   }
 
    /**
-   * Protege name: capsule_agent
+* Protege name: capsule_agent
    */
-   public void setCapsule_agent(jade.core.AID value);
-   public jade.core.AID getCapsule_agent();
+   private AID capsule_agent;
+   public void setCapsule_agent(AID value) { 
+    this.capsule_agent=value;
+   }
+   public AID getCapsule_agent() {
+     return this.capsule_agent;
+   }
 
 }

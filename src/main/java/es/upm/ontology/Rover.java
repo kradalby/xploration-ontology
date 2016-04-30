@@ -1,30 +1,37 @@
 package es.upm.ontology;
 
-import java.io.Serializable;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: Rover
-* @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 13:52:53
+* @author ontology bean generator
+* @version 2016/04/30, 12:54:56
 */
-public interface Rover extends jade.content.Concept, Serializable {
-   // bean stuff
-   public void addPropertyChangeListener(PropertyChangeListener pcl);
-   public void removePropertyChangeListener(PropertyChangeListener pcl);
+public class Rover implements Concept {
 
    /**
-   * Protege name: name
+* Protege name: name
    */
-   public void setName(String value);
-   public String getName();
+   private String name;
+   public void setName(String value) { 
+    this.name=value;
+   }
+   public String getName() {
+     return this.name;
+   }
 
    /**
-   * Protege name: rover_agent
+* Protege name: rover_agent
    */
-   public void setRover_agent(jade.core.AID value);
-   public jade.core.AID getRover_agent();
+   private AID rover_agent;
+   public void setRover_agent(AID value) { 
+    this.rover_agent=value;
+   }
+   public AID getRover_agent() {
+     return this.rover_agent;
+   }
 
 }

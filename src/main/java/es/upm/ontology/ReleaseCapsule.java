@@ -1,24 +1,26 @@
 package es.upm.ontology;
 
-import java.io.Serializable;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: ReleaseCapsule
-* @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 13:52:53
+* @author ontology bean generator
+* @version 2016/04/30, 12:54:56
 */
-public interface ReleaseCapsule extends jade.content.AgentAction, Serializable {
-   // bean stuff
-   public void addPropertyChangeListener(PropertyChangeListener pcl);
-   public void removePropertyChangeListener(PropertyChangeListener pcl);
+public class ReleaseCapsule implements AgentAction {
 
    /**
-   * Protege name: location
+* Protege name: location
    */
-   public void setLocation(Location value);
-   public Location getLocation();
+   private Location location;
+   public void setLocation(Location value) { 
+    this.location=value;
+   }
+   public Location getLocation() {
+     return this.location;
+   }
 
 }

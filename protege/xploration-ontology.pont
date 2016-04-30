@@ -1,4 +1,4 @@
-; Thu Apr 28 13:04:03 CEST 2016
+; Sat Apr 30 12:41:00 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -16,8 +16,7 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot Y
-		(type FLOAT)
-		(default 0.0)
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3APACKAGE
@@ -26,8 +25,7 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot X
-		(type FLOAT)
-		(default 0.0)
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
@@ -291,13 +289,11 @@
 	(is-a Concept)
 	(role concrete)
 	(single-slot Y
-		(type FLOAT)
-		(default 0.0)
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot X
-		(type FLOAT)
-		(default 0.0)
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 

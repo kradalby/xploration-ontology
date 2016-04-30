@@ -1,24 +1,26 @@
 package es.upm.ontology;
 
-import java.io.Serializable;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: RegistrationRequest
-* @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 13:52:53
+* @author ontology bean generator
+* @version 2016/04/30, 12:54:56
 */
-public interface RegistrationRequest extends jade.content.AgentAction, Serializable {
-   // bean stuff
-   public void addPropertyChangeListener(PropertyChangeListener pcl);
-   public void removePropertyChangeListener(PropertyChangeListener pcl);
+public class RegistrationRequest implements AgentAction {
 
    /**
-   * Protege name: company
+* Protege name: company
    */
-   public void setCompany(String value);
-   public String getCompany();
+   private String company;
+   public void setCompany(String value) { 
+    this.company=value;
+   }
+   public String getCompany() {
+     return this.company;
+   }
 
 }

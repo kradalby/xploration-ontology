@@ -1,36 +1,48 @@
 package es.upm.ontology;
 
-import java.io.Serializable;
-import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: Company
-* @author OntologyBeanGenerator v4.1
-* @version 2016/04/28, 13:52:53
+* @author ontology bean generator
+* @version 2016/04/30, 12:54:56
 */
-public interface Company extends jade.content.Concept, Serializable {
-   // bean stuff
-   public void addPropertyChangeListener(PropertyChangeListener pcl);
-   public void removePropertyChangeListener(PropertyChangeListener pcl);
+public class Company implements Concept {
 
    /**
-   * Protege name: company_agent
+* Protege name: company_agent
    */
-   public void setCompany_agent(jade.core.AID value);
-   public jade.core.AID getCompany_agent();
+   private AID company_agent;
+   public void setCompany_agent(AID value) { 
+    this.company_agent=value;
+   }
+   public AID getCompany_agent() {
+     return this.company_agent;
+   }
 
    /**
-   * Protege name: name
+* Protege name: name
    */
-   public void setName(String value);
-   public String getName();
+   private String name;
+   public void setName(String value) { 
+    this.name=value;
+   }
+   public String getName() {
+     return this.name;
+   }
 
    /**
-   * Protege name: capsule
+* Protege name: capsule
    */
-   public void setCapsule(Capsule value);
-   public Capsule getCapsule();
+   private Capsule capsule;
+   public void setCapsule(Capsule value) { 
+    this.capsule=value;
+   }
+   public Capsule getCapsule() {
+     return this.capsule;
+   }
 
 }
