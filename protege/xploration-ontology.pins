@@ -1,7 +1,7 @@
-; Sat Apr 30 12:41:00 CEST 2016
+; Thu May 05 01:21:01 CEST 2016
 ; 
 ;+ (version "3.5")
-;+ (build "Build 663")
+;+ (build "Build 660")
 
 ([addresses] of  %3AJADE-SLOT
 
@@ -27,6 +27,10 @@
 
 	(%3AJADE-IGNORE TRUE))
 
+([Direction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([Location] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
@@ -41,7 +45,7 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "/Users/borismakogonyuk/Documents/Projects/Java/AgentBasedDevelopment/Shared/src/main/java")
+	(%3ALOCATION "C:\\Users\\onezero\\Documents\\GitHub\\xploration-shared\\src\\main\\java")
 	(%3AONTOLOGYNAME "xploration")
 	(%3APACKAGE "es.upm.ontology")
 	(%3ASUPPORT "j2se"))
@@ -58,11 +62,19 @@
 
 	(%3AJADE-IGNORE FALSE))
 
+([PROTOCOL_REQUEST_ROVER_MOVEMENT] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([RegistrationRequest] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
 ([ReleaseCapsule] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([RequestRoverMovement] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
