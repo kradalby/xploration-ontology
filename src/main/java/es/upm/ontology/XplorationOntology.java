@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
  * @author ontology bean generator
- * @version 2016/05/5, 01:21:05
+ * @version 2016/05/8, 17:03:39
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -48,7 +48,7 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     public static final String ROVER_NAME="name";
     public static final String ROVER="Rover";
     public static final String PROTOCOL="Protocol";
-    public static final String PROTOCOL_REQUEST_ROVER_MOVEMENT="PROTOCOL_REQUEST_ROVER_MOVEMENT";
+    public static final String PROTOCOL_ROVER_MOVEMENT="PROTOCOL_ROVER_MOVEMENT";
 
   /**
    * Constructor
@@ -58,8 +58,8 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     try { 
 
     // adding Concept(s)
-    ConceptSchema protocoL_requesT_roveR_movementSchema = new ConceptSchema(PROTOCOL_REQUEST_ROVER_MOVEMENT);
-    add(protocoL_requesT_roveR_movementSchema, es.upm.ontology.PROTOCOL_REQUEST_ROVER_MOVEMENT.class);
+    ConceptSchema protocoL_roveR_movementSchema = new ConceptSchema(PROTOCOL_ROVER_MOVEMENT);
+    add(protocoL_roveR_movementSchema, es.upm.ontology.PROTOCOL_ROVER_MOVEMENT.class);
     ConceptSchema protocolSchema = new ConceptSchema(PROTOCOL);
     add(protocolSchema, es.upm.ontology.Protocol.class);
     ConceptSchema roverSchema = new ConceptSchema(ROVER);
@@ -109,7 +109,7 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     // adding name mappings
 
     // adding inheritance
-    protocoL_requesT_roveR_movementSchema.addSuperSchema(protocolSchema);
+    protocoL_roveR_movementSchema.addSuperSchema(protocolSchema);
     protocoL_registrationSchema.addSuperSchema(protocolSchema);
     protocoL_releasE_capsuleSchema.addSuperSchema(protocolSchema);
 

@@ -1,4 +1,4 @@
-; Thu May 05 01:21:00 CEST 2016
+; Sun May 08 17:04:08 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -363,7 +363,7 @@
 	(is-a Protocol)
 	(role concrete))
 
-(defclass PROTOCOL_REQUEST_ROVER_MOVEMENT
+(defclass PROTOCOL_ROVER_MOVEMENT
 	(is-a Protocol)
 	(role concrete))
 

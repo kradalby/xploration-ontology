@@ -1,4 +1,4 @@
-; Thu May 05 01:21:01 CEST 2016
+; Sun May 08 17:04:08 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -689,6 +689,9 @@
 		[KB_030955_Class139]
 		[KB_030955_Class141]))
 
+([KB_200229_Class7] of  Map
+)
+
 ([KB_514774_Class0] of  String
 
 	(name "factory_class_name")
@@ -790,9 +793,6 @@
 	(properties
 		[KB_514774_Class10]
 		[KB_514774_Class11]))
-
-([KB_657649_Class7] of  Map
-)
 
 ([LAYOUT_PROPERTIES] of  Property_List
 

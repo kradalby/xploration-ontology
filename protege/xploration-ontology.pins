@@ -1,4 +1,4 @@
-; Thu May 05 01:21:01 CEST 2016
+; Sun May 08 17:04:08 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -45,7 +45,7 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "C:\\Users\\onezero\\Documents\\GitHub\\xploration-shared\\src\\main\\java")
+	(%3ALOCATION "C:\\Users\\onezero\\Documents\\GitHub\\xploration2016_tx\\xploration2016_tx\\src\\main\\java")
 	(%3AONTOLOGYNAME "xploration")
 	(%3APACKAGE "es.upm.ontology")
 	(%3ASUPPORT "j2se"))
@@ -62,7 +62,7 @@
 
 	(%3AJADE-IGNORE FALSE))
 
-([PROTOCOL_REQUEST_ROVER_MOVEMENT] of  %3AJADE-CLASS
+([PROTOCOL_ROVER_MOVEMENT] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
