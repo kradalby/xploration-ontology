@@ -1,4 +1,4 @@
-; Sun May 08 17:04:08 CEST 2016
+; Thu May 12 19:55:30 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -66,6 +66,10 @@
 
 	(%3AJADE-IGNORE FALSE))
 
+([PROTOCOL_ANALYZE_MINERAL] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
 ([RegistrationRequest] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
@@ -75,6 +79,10 @@
 	(%3AJADE-IGNORE FALSE))
 
 ([RequestRoverMovement] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+	
+([MineralResult] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
