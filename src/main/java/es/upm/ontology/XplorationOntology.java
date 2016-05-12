@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
  * @author ontology bean generator
- * @version 2016/05/8, 17:03:39
+ * @version 2016/05/11, 19:54:30
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -23,6 +23,11 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
 
 
    // VOCABULARY
+  	public static final String MINERALRESULT_MINERAL="mineral";
+  	public static final String MINERALRESULT="MineralResult";
+  	public static final String PROTOCOL_ANALYZE_MINERAL="PROTOCOL_ANALYZE_MINERAL";
+  	public static final String MINERAL="Mineral";
+  	public static final String MINERAL_TYPE="type";  	
     public static final String REQUESTROVERMOVEMENT_DIRECTION="direction";
     public static final String REQUESTROVERMOVEMENT="RequestRoverMovement";
     public static final String REGISTRATIONREQUEST_COMPANY="company";
@@ -76,6 +81,10 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     add(directionSchema, es.upm.ontology.Direction.class);
     ConceptSchema protocoL_releasE_capsuleSchema = new ConceptSchema(PROTOCOL_RELEASE_CAPSULE);
     add(protocoL_releasE_capsuleSchema, es.upm.ontology.PROTOCOL_RELEASE_CAPSULE.class);
+    ConceptSchema mineralSchema = new ConceptSchema(MINERAL);
+    add(mineralSchema, es.upm.ontology.Mineral.class);
+    ConceptSchema protocoL_analyzE_mineralSchema = new ConceptSchema(PROTOCOL_ANALYZE_MINERAL);
+    add(protocoL_analyzE_mineralSchema, es.upm.ontology.PROTOCOL_ANALYZE_MINERAL.class);
 
     // adding AgentAction(s)
     AgentActionSchema releaseCapsuleSchema = new AgentActionSchema(RELEASECAPSULE);
@@ -84,6 +93,8 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     add(registrationRequestSchema, es.upm.ontology.RegistrationRequest.class);
     AgentActionSchema requestRoverMovementSchema = new AgentActionSchema(REQUESTROVERMOVEMENT);
     add(requestRoverMovementSchema, es.upm.ontology.RequestRoverMovement.class);
+    AgentActionSchema mineralResultSchema = new AgentActionSchema(MINERALRESULT);
+    add(mineralResultSchema, es.upm.ontology.MineralResult.class);
 
     // adding AID(s)
 
@@ -105,13 +116,16 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     releaseCapsuleSchema.add(RELEASECAPSULE_LOCATION, locationSchema, ObjectSchema.OPTIONAL);
     registrationRequestSchema.add(REGISTRATIONREQUEST_COMPANY, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
     requestRoverMovementSchema.add(REQUESTROVERMOVEMENT_DIRECTION, directionSchema, ObjectSchema.MANDATORY);
-
+    mineralResultSchema.add(MINERALRESULT_MINERAL, mineralSchema,ObjectSchema.OPTIONAL);
+    mineralSchema.add(MINERAL_TYPE, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
+    
     // adding name mappings
 
     // adding inheritance
     protocoL_roveR_movementSchema.addSuperSchema(protocolSchema);
     protocoL_registrationSchema.addSuperSchema(protocolSchema);
     protocoL_releasE_capsuleSchema.addSuperSchema(protocolSchema);
+    protocoL_analyzE_mineralSchema.addSuperSchema(protocolSchema);
 
    }catch (java.lang.Exception e) {e.printStackTrace();}
   }
