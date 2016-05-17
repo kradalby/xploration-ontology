@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: Capsule
 * @author ontology bean generator
-* @version 2016/05/11, 19:54:30
+* @version 2016/05/17, 20:24:51
 */
 public class Capsule implements Concept {
 
