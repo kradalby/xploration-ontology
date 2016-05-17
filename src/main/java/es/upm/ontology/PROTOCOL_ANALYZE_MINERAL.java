@@ -5,9 +5,9 @@ import jade.util.leap.*;
 import jade.core.*;
 
 /**
-* Protege name: PROTOCOL_ANALYZE_MINERAL
+* Protege name: PROTOCOL_ANALYZE-MINERAL
 * @author ontology bean generator
-* @version 2016/05/11, 19:54:30
+* @version 2016/05/17, 20:24:51
 */
 public class PROTOCOL_ANALYZE_MINERAL extends Protocol{ 
 

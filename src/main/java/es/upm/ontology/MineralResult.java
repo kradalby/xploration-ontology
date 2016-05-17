@@ -8,18 +8,19 @@ import jade.core.*;
 /**
 * Protege name: MineralResult
 * @author ontology bean generator
-* @version 2016/05/11, 19:54:30
+* @version 2016/05/17, 20:24:51
 */
 public class MineralResult implements AgentAction {
 
    /**
-* Protege name: Mineral
+   * The mineral result of cell.
+* Protege name: mineral
    */
    private Mineral mineral;
-   public void setMineralType(Mineral value) { 
+   public void setMineral(Mineral value) { 
     this.mineral=value;
    }
-   public Mineral getMineralType() {
+   public Mineral getMineral() {
      return this.mineral;
    }
 
