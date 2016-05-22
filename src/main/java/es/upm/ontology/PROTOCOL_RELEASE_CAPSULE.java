@@ -1,14 +1,12 @@
 package es.upm.ontology;
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
+
 
 /**
 * Protege name: PROTOCOL_RELEASE_CAPSULE
-* @author ontology bean generator
-* @version 2016/05/17, 20:24:51
+* @author OntologyBeanGenerator v4.1
+* @version 2016/05/22, 13:06:44
 */
-public class PROTOCOL_RELEASE_CAPSULE extends Protocol{ 
+public interface PROTOCOL_RELEASE_CAPSULE extends Protocol {
 
 }
