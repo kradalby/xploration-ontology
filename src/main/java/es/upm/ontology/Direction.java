@@ -1,27 +1,19 @@
 package es.upm.ontology;
 
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
 
 /**
 * Protege name: Direction
-* @author ontology bean generator
-* @version 2016/05/17, 20:24:51
+* @author OntologyBeanGenerator v4.1
+* @version 2016/05/22, 13:58:52
 */
-public class Direction implements Concept {
+public interface Direction extends jade.content.Concept {
 
    /**
    * Represtents direction the value ranges from 1 to 6
-* Protege name: x
+   * Protege name: x
    */
-   private int x;
-   public void setX(int value) { 
-    this.x=value;
-   }
-   public int getX() {
-     return this.x;
-   }
+   public void setX(int value);
+   public int getX();
 
 }

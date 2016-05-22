@@ -1,37 +1,24 @@
 package es.upm.ontology;
 
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
 
 /**
 * Protege name: Rover
-* @author ontology bean generator
-* @version 2016/05/17, 20:24:51
+* @author OntologyBeanGenerator v4.1
+* @version 2016/05/22, 13:58:52
 */
-public class Rover implements Concept {
+public interface Rover extends jade.content.Concept {
 
    /**
-* Protege name: name
+   * Protege name: name
    */
-   private String name;
-   public void setName(String value) { 
-    this.name=value;
-   }
-   public String getName() {
-     return this.name;
-   }
+   public void setName(String value);
+   public String getName();
 
    /**
-* Protege name: rover_agent
+   * Protege name: rover_agent
    */
-   private AID rover_agent;
-   public void setRover_agent(AID value) { 
-    this.rover_agent=value;
-   }
-   public AID getRover_agent() {
-     return this.rover_agent;
-   }
+   public void setRover_agent(jade.core.AID value);
+   public jade.core.AID getRover_agent();
 
 }

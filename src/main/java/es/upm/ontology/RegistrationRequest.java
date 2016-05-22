@@ -1,26 +1,18 @@
 package es.upm.ontology;
 
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
 
 /**
 * Protege name: RegistrationRequest
-* @author ontology bean generator
-* @version 2016/05/17, 20:24:51
+* @author OntologyBeanGenerator v4.1
+* @version 2016/05/22, 13:58:52
 */
-public class RegistrationRequest implements AgentAction {
+public interface RegistrationRequest extends jade.content.AgentAction {
 
    /**
-* Protege name: company
+   * Protege name: company
    */
-   private String company;
-   public void setCompany(String value) { 
-    this.company=value;
-   }
-   public String getCompany() {
-     return this.company;
-   }
+   public void setCompany(String value);
+   public String getCompany();
 
 }

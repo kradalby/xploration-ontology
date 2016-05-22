@@ -1,48 +1,30 @@
 package es.upm.ontology;
 
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
 
 /**
 * Protege name: Company
-* @author ontology bean generator
-* @version 2016/05/17, 20:24:51
+* @author OntologyBeanGenerator v4.1
+* @version 2016/05/22, 13:58:52
 */
-public class Company implements Concept {
+public interface Company extends jade.content.Concept {
 
    /**
-* Protege name: company_agent
+   * Protege name: company_agent
    */
-   private AID company_agent;
-   public void setCompany_agent(AID value) { 
-    this.company_agent=value;
-   }
-   public AID getCompany_agent() {
-     return this.company_agent;
-   }
+   public void setCompany_agent(jade.core.AID value);
+   public jade.core.AID getCompany_agent();
 
    /**
-* Protege name: name
+   * Protege name: name
    */
-   private String name;
-   public void setName(String value) { 
-    this.name=value;
-   }
-   public String getName() {
-     return this.name;
-   }
+   public void setName(String value);
+   public String getName();
 
    /**
-* Protege name: capsule
+   * Protege name: capsule
    */
-   private Capsule capsule;
-   public void setCapsule(Capsule value) { 
-    this.capsule=value;
-   }
-   public Capsule getCapsule() {
-     return this.capsule;
-   }
+   public void setCapsule(Capsule value);
+   public Capsule getCapsule();
 
 }

@@ -3,10 +3,10 @@ package es.upm.ontology;
 
 
 /**
-* Protege name: PROTOCOL_REGISTRATION
+* Protege name: PROTOCOL_MOVE_INFO
 * @author OntologyBeanGenerator v4.1
 * @version 2016/05/22, 13:58:52
 */
-public interface PROTOCOL_REGISTRATION extends Protocol {
+public interface PROTOCOL_MOVE_INFO extends Protocol {
 
 }

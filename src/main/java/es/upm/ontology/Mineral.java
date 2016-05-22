@@ -1,27 +1,19 @@
 package es.upm.ontology;
 
 
-import jade.content.*;
-import jade.util.leap.*;
-import jade.core.*;
 
 /**
 * Protege name: Mineral
-* @author ontology bean generator
-* @version 2016/05/17, 20:24:51
+* @author OntologyBeanGenerator v4.1
+* @version 2016/05/22, 13:58:52
 */
-public class Mineral implements Concept {
+public interface Mineral extends jade.content.Concept {
 
    /**
    * The mineral result type of the cell.
-* Protege name: type
+   * Protege name: type
    */
-   private String type;
-   public void setType(String value) { 
-    this.type=value;
-   }
-   public String getType() {
-     return this.type;
-   }
+   public void setType(String value);
+   public String getType();
 
 }
