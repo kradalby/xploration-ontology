@@ -5,7 +5,7 @@ package es.upm.ontology;
 /**
 * Protege name: ReleaseCapsule
 * @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:06:44
+* @version 2016/05/22, 13:58:52
 */
 public interface ReleaseCapsule extends jade.content.AgentAction {
 

@@ -8,11 +8,11 @@ import es.upm.ontology.*;
 Protocols are not used in any specific way and are included so that they can be used as part of the vocabulary.
 * Protege name: Protocol
 * @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:06:44
+* @version 2016/05/22, 13:58:52
 */
 public class DefaultProtocol implements Protocol {
 
-  private static final long serialVersionUID = -6264111747675361798L;
+  private static final long serialVersionUID = -2365801926972587165L;
 
   private String _internalInstanceName = null;
 

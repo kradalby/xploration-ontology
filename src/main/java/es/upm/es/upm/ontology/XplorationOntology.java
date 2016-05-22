@@ -3,18 +3,19 @@ package es.upm.ontology;
 
 import jade.content.onto.*;
 import jade.content.schema.*;
+import jade.util.leap.HashMap;
+import jade.content.lang.Codec;
+import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
- * @author OntologyBeanGenerator v4.1
- * @version 2016/05/22, 13:58:52
+ * @author ontology bean generator
+ * @version 2016/05/22, 14:17:54
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
-
-  private static final long serialVersionUID = -2365801926972587165L;
-
   //NAME
   public static final String ONTOLOGY_NAME = "xploration";
   // The singleton instance of this ontology
+  private static ReflectiveIntrospector introspect = new ReflectiveIntrospector();
   private static Ontology theInstance = new XplorationOntology();
   public static Ontology getInstance() {
      return theInstance;
@@ -141,4 +142,4 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
 
    }catch (java.lang.Exception e) {e.printStackTrace();}
   }
-}
+  }
