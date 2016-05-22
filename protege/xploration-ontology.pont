@@ -1,4 +1,4 @@
-; Thu May 12 11:42:54 CEST 2016
+; Sun May 22 14:33:03 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -15,13 +15,13 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot Y
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot %3APACKAGE
 ;+		(comment "packagename")
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Y
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot X
@@ -83,14 +83,14 @@
 		(range 1 6)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-CODE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot mineral
 ;+		(comment "The mineral result of cell.")
 		(type INSTANCE)
 ;+		(allowed-classes Mineral)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-CODE
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-IGNORE
@@ -98,6 +98,11 @@
 		(allowed-values FALSE TRUE)
 		(default FALSE)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot RoverLocation
+		(type INSTANCE)
+;+		(allowed-classes Location)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot %3AJADE-INCLUDED-PROPERTIES
 		(type INSTANCE)
@@ -134,6 +139,11 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot MoveDirection
+		(type INSTANCE)
+;+		(allowed-classes Direction)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot company
 		(type STRING)
 ;+		(cardinality 0 1)
@@ -165,6 +175,10 @@
 	(single-slot company_agent
 		(type INSTANCE)
 ;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10003
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot capsule
@@ -291,7 +305,7 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass MineralResulte
+(defclass MineralResult
 	(is-a AgentAction)
 	(role concrete)
 	(single-slot mineral
@@ -299,6 +313,20 @@
 		(type INSTANCE)
 ;+		(allowed-classes Mineral)
 ;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass MoveInformation
+	(is-a AgentAction)
+	(role concrete)
+	(single-slot RoverLocation
+		(type INSTANCE)
+;+		(allowed-classes Location)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot MoveDirection
+		(type INSTANCE)
+;+		(allowed-classes Direction)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Company
@@ -388,7 +416,11 @@
 	(is-a Protocol)
 	(role concrete))
 
-(defclass PROTOCOL_ANALYZE-MINERAL
+(defclass PROTOCOL_ANALYZE_MINERAL
+	(is-a Protocol)
+	(role concrete))
+
+(defclass PROTOCOL_MOVE_INFO
 	(is-a Protocol)
 	(role concrete))
 
