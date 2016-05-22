@@ -1,31 +1,54 @@
-; Sun May 22 14:33:03 CEST 2016
+; Sun May 22 20:43:55 CEST 2016
 ; 
 ;+ (version "3.5")
-;+ (build "Build 663")
+;+ (build "Build 660")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot xploration-ontology_Class0
+	(single-slot company
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ASUPPORT
-		(type STRING)
+	(single-slot %3AJADE-IGNORE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3APACKAGE
-;+		(comment "packagename")
-		(type STRING)
+	(single-slot X
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot Y
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot X
-		(type INTEGER)
+	(single-slot %3AJADE-PROPERTIES-GENERATE-ONTOLOGY
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot direction
+;+		(comment "The direction of the rover movement")
+		(type INSTANCE)
+;+		(allowed-classes Direction)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rover
+		(type INSTANCE)
+;+		(allowed-classes Rover)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot location
+		(type INSTANCE)
+;+		(allowed-classes Location)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-GENERATE-BEANS
@@ -34,40 +57,82 @@
 		(default TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot xploration-ontology_Class14
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot direction
-;+		(comment "The direction of the rover movement")
-		(type INSTANCE)
-;+		(allowed-classes Direction)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot resolvers
 		(type SYMBOL)
 ;+		(allowed-parents AID)
 		(create-accessor read-write))
-	(single-slot capsule_agent
+	(single-slot %3ASUPPORT
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-BASE-CLASS
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot x
+;+		(comment "Represtents direction the value ranges from 1 to 6")
+		(type INTEGER)
+		(range 1 6)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-CODE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot RoverLocation
+		(type INSTANCE)
+;+		(allowed-classes Location)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot company_agent
 		(type INSTANCE)
 ;+		(allowed-classes AID)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot rover
+	(single-slot capsule
 		(type INSTANCE)
-;+		(allowed-classes Rover)
+;+		(allowed-classes Capsule)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ALOCATION
-;+		(comment "The location to store files into")
+	(single-slot %3AJADE-PROPERTIES-DIRECTORY
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AONTOLOGYNAME
+;+		(comment "name of the ontology")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10004
+		(type SYMBOL)
+;+		(allowed-parents)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10003
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot common_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-PROPERTIES-COMPATIBILITY
+		(type SYMBOL)
+		(allowed-values J2ME JavaBeans Classes)
+		(default Classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot rover_agent
+		(type INSTANCE)
+;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot type
+;+		(comment "The mineral result type of the cell.")
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot xploration-ontology_Class20005
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-DIRECTORY
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -77,65 +142,16 @@
 ;+		(cardinality 1 1)
 ;+		(associated-facet SimpleJADEAbstractOntology_00016)
 		(create-accessor read-write))
-	(single-slot x
-;+		(comment "Represtents direction the value ranges from 1 to 6")
-		(type INTEGER)
-		(range 1 6)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot mineral
-;+		(comment "The mineral result of cell.")
+	(single-slot capsule_agent
 		(type INSTANCE)
-;+		(allowed-classes Mineral)
+;+		(allowed-classes AID)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-CODE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-IGNORE
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot RoverLocation
-		(type INSTANCE)
-;+		(allowed-classes Location)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot %3AJADE-INCLUDED-PROPERTIES
 		(type INSTANCE)
 ;+		(allowed-classes)
 		(create-accessor read-write))
-	(single-slot rover_agent
-		(type INSTANCE)
-;+		(allowed-classes AID)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-PACKAGE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-GENERATE-ONTOLOGY
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot common_name
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot addresses
-		(type STRING)
-		(create-accessor read-write))
-	(single-slot type
-;+		(comment "The mineral result type of the cell.")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-BASE-CLASS
+	(single-slot xploration-ontology_Class14
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -144,77 +160,61 @@
 ;+		(allowed-classes Direction)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot company
+	(single-slot %3AJADE-PROPERTIES-PACKAGE
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3APACKAGE
+;+		(comment "packagename")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot mineral
+;+		(comment "The mineral result of cell.")
+		(type INSTANCE)
+;+		(allowed-classes Mineral)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot location
-		(type INSTANCE)
-;+		(allowed-classes Location)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot name_
+	(single-slot xploration-ontology_Class0
 		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-PROPERTIES-COMPATIBILITY
-		(type SYMBOL)
-		(allowed-values J2ME JavaBeans Classes)
-		(default Classes)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AONTOLOGYNAME
-;+		(comment "name of the ontology")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot company_agent
-		(type INSTANCE)
-;+		(allowed-classes AID)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot xploration-ontology_Class10003
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot capsule
-		(type INSTANCE)
-;+		(allowed-classes Capsule)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot xploration-ontology_Class10004
-		(type SYMBOL)
-;+		(allowed-parents)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
 ;+		(associated-facet SimpleJADEAbstractOntology_00014)
+		(create-accessor read-write))
+	(multislot addresses
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot %3ALOCATION
+;+		(comment "The location to store files into")
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass %3AJADE-CLASS
 	(is-a %3ASTANDARD-CLASS)
 	(role concrete)
-	(single-slot %3AJADE-JAVA-CODE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot %3AJADE-IGNORE
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-BASE-CLASS
+	(single-slot %3AJADE-JAVA-CODE
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-BASE-CLASS
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
@@ -240,8 +240,8 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ALOCATION
-;+		(comment "The location to store files into")
+	(single-slot %3APACKAGE
+;+		(comment "packagename")
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -249,8 +249,8 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3APACKAGE
-;+		(comment "packagename")
+	(single-slot %3ALOCATION
+;+		(comment "The location to store files into")
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
@@ -262,9 +262,6 @@
 (defclass AID
 	(is-a Concept)
 	(role concrete)
-	(multislot addresses
-		(type STRING)
-		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
@@ -272,6 +269,9 @@
 	(multislot resolvers
 		(type SYMBOL)
 ;+		(allowed-parents AID)
+		(create-accessor read-write))
+	(multislot addresses
+		(type STRING)
 		(create-accessor read-write)))
 
 (defclass AgentAction "The common ancestor for all actions in an ontology (e.g. Sell, Buy...)"
@@ -363,11 +363,11 @@
 (defclass Location
 	(is-a Concept)
 	(role concrete)
-	(single-slot Y
+	(single-slot X
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot X
+	(single-slot Y
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
@@ -385,11 +385,6 @@
 (defclass Capsule
 	(is-a Concept)
 	(role concrete)
-	(single-slot rover
-		(type INSTANCE)
-;+		(allowed-classes Rover)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
@@ -397,6 +392,11 @@
 	(single-slot capsule_agent
 		(type INSTANCE)
 ;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot rover
+		(type INSTANCE)
+;+		(allowed-classes Rover)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -421,6 +421,10 @@
 	(role concrete))
 
 (defclass PROTOCOL_MOVE_INFO
+	(is-a Protocol)
+	(role concrete))
+
+(defclass PROTOCOL_NOTIFY_WORLD
 	(is-a Protocol)
 	(role concrete))
 

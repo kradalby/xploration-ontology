@@ -1,7 +1,7 @@
-; Sun May 22 14:33:03 CEST 2016
+; Sun May 22 20:43:55 CEST 2016
 ; 
 ;+ (version "3.5")
-;+ (build "Build 663")
+;+ (build "Build 660")
 
 ([ANNOTATED_INSTANCE_WIDGET] of  Widget
 
@@ -21,10 +21,10 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[xploration-ontology_ProjectKB_Class20063]
-		[xploration-ontology_ProjectKB_Class20064]
-		[xploration-ontology_ProjectKB_Class20065]
-		[xploration-ontology_ProjectKB_Class20066]))
+		[xploration-ontology_ProjectKB_Class10008]
+		[xploration-ontology_ProjectKB_Class10009]
+		[xploration-ontology_ProjectKB_Class10010]
+		[xploration-ontology_ProjectKB_Class10011]))
 
 ([CLSES_TAB] of  Widget
 
@@ -689,6 +689,9 @@
 		[KB_030955_Class139]
 		[KB_030955_Class141]))
 
+([KB_246223_Class7] of  Map
+)
+
 ([KB_514774_Class0] of  String
 
 	(name "factory_class_name")
@@ -697,11 +700,11 @@
 ([KB_514774_Class1] of  Map
 
 	(entries
-		[xploration-ontology_ProjectKB_Class20067]
-		[xploration-ontology_ProjectKB_Class20068]
-		[xploration-ontology_ProjectKB_Class20072]
-		[xploration-ontology_ProjectKB_Class20073])
-	(referenced_maps [xploration-ontology_ProjectKB_Class20069]))
+		[xploration-ontology_ProjectKB_Class10015]
+		[xploration-ontology_ProjectKB_Class20016]
+		[xploration-ontology_ProjectKB_Class20017]
+		[xploration-ontology_ProjectKB_Class20018])
+	(referenced_maps [xploration-ontology_ProjectKB_Class10012]))
 
 ([KB_514774_Class10] of  Boolean
 
@@ -791,9 +794,6 @@
 		[KB_514774_Class10]
 		[KB_514774_Class11]))
 
-([KB_873828_Class7] of  Map
-)
-
 ([LAYOUT_PROPERTIES] of  Property_List
 
 	(name "layout properties")
@@ -877,13 +877,13 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[KB_030955_Class47]
-		[STANDARD_FACET_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
-		[PAL_FORM_WIDGET]
 		[KB_030955_Class98]
-		[STANDARD_CLASS_FORM_WIDGET])
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
+		[PAL_FORM_WIDGET]
+		[KB_030955_Class47])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -1274,6 +1274,53 @@
 ([xploration-ontology_ProjectKB_Class10] of  Property_List
 )
 
+([xploration-ontology_ProjectKB_Class10008] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([xploration-ontology_ProjectKB_Class10009] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([xploration-ontology_ProjectKB_Class10010] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([xploration-ontology_ProjectKB_Class10011] of  String
+
+	(name "RegistrationRequest")
+	(string_value "company"))
+
+([xploration-ontology_ProjectKB_Class10012] of  Map
+
+	(entries
+		[xploration-ontology_ProjectKB_Class10013]
+		[xploration-ontology_ProjectKB_Class10014]))
+
+([xploration-ontology_ProjectKB_Class10013] of  Map_Entry
+
+	(key "xploration-ontology_Class10011")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "552 41 202 123")
+	(value_class "java.awt.Rectangle"))
+
+([xploration-ontology_ProjectKB_Class10014] of  Map_Entry
+
+	(key "xploration-ontology_Class10010")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "313 93 202 123")
+	(value_class "java.awt.Rectangle"))
+
+([xploration-ontology_ProjectKB_Class10015] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "xploration-ontology_ProjectKB_Class10012")
+	(value_class "java.util.Map"))
+
 ([xploration-ontology_ProjectKB_Class10016] of  Property_List
 
 	(name "layout properties"))
@@ -1399,70 +1446,23 @@
 ([xploration-ontology_ProjectKB_Class20] of  Property_List
 )
 
-([xploration-ontology_ProjectKB_Class20063] of  String
+([xploration-ontology_ProjectKB_Class20016] of  Map_Entry
 
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
-([xploration-ontology_ProjectKB_Class20064] of  String
-
-	(name "RegistrationRequest")
-	(string_value "company"))
-
-([xploration-ontology_ProjectKB_Class20065] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([xploration-ontology_ProjectKB_Class20066] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([xploration-ontology_ProjectKB_Class20067] of  Map_Entry
+([xploration-ontology_ProjectKB_Class20017] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([xploration-ontology_ProjectKB_Class20068] of  Map_Entry
+([xploration-ontology_ProjectKB_Class20018] of  Map_Entry
 
 	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([xploration-ontology_ProjectKB_Class20069] of  Map
-
-	(entries
-		[xploration-ontology_ProjectKB_Class20070]
-		[xploration-ontology_ProjectKB_Class20071]))
-
-([xploration-ontology_ProjectKB_Class20070] of  Map_Entry
-
-	(key "xploration-ontology_Class10010")
-	(key_class "edu.stanford.smi.protege.model.Frame")
-	(value "313 93 202 123")
-	(value_class "java.awt.Rectangle"))
-
-([xploration-ontology_ProjectKB_Class20071] of  Map_Entry
-
-	(key "xploration-ontology_Class10011")
-	(key_class "edu.stanford.smi.protege.model.Frame")
-	(value "552 41 202 123")
-	(value_class "java.awt.Rectangle"))
-
-([xploration-ontology_ProjectKB_Class20072] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "xploration-ontology_ProjectKB_Class20069")
-	(value_class "java.util.Map"))
-
-([xploration-ontology_ProjectKB_Class20073] of  Map_Entry
-
-	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
