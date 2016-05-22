@@ -1,12 +1,14 @@
 package es.upm.ontology;
 
-
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: PROTOCOL_REGISTRATION
-* @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:58:52
+* @author ontology bean generator
+* @version 2016/05/22, 14:32:56
 */
-public interface PROTOCOL_REGISTRATION extends Protocol {
+public class PROTOCOL_REGISTRATION extends Protocol{ 
 
 }

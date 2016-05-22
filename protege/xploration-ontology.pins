@@ -1,4 +1,4 @@
-; Sun May 22 14:17:56 CEST 2016
+; Sun May 22 14:33:03 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -57,7 +57,7 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "/Users/pranavgautam/IdeaProjects/ABSD/xploration-shared/src/main/java/es/upm")
+	(%3ALOCATION "/Users/pranavgautam/IdeaProjects/ABSD/xploration-shared/src/main/java")
 	(%3AONTOLOGYNAME "xploration")
 	(%3APACKAGE "es.upm.ontology")
 	(%3ASUPPORT "j2se"))

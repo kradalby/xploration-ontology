@@ -1,24 +1,26 @@
 package es.upm.ontology;
 
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: ReleaseCapsule
-* @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:58:52
+* @author ontology bean generator
+* @version 2016/05/22, 14:32:56
 */
-public interface ReleaseCapsule extends jade.content.AgentAction {
+public class ReleaseCapsule implements AgentAction {
 
    /**
-   * Protege name: location
+* Protege name: location
    */
-   public void setLocation(Location value);
-   public Location getLocation();
-
-   /**
-   * Protege name: MoveDirection
-   */
-   public void setMoveDirection(Direction value);
-   public Direction getMoveDirection();
+   private Location location;
+   public void setLocation(Location value) { 
+    this.location=value;
+   }
+   public Location getLocation() {
+     return this.location;
+   }
 
 }

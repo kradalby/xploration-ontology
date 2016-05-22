@@ -1,4 +1,4 @@
-; Sun May 22 14:17:56 CEST 2016
+; Sun May 22 14:33:03 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -293,11 +293,6 @@
 		(type INSTANCE)
 ;+		(allowed-classes Location)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot MoveDirection
-		(type INSTANCE)
-;+		(allowed-classes Direction)
-;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass RequestRoverMovement
@@ -323,13 +318,14 @@
 (defclass MoveInformation
 	(is-a AgentAction)
 	(role concrete)
-	(single-slot xploration-ontology_Class10003
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot RoverLocation
 		(type INSTANCE)
 ;+		(allowed-classes Location)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot MoveDirection
+		(type INSTANCE)
+;+		(allowed-classes Direction)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 

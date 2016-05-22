@@ -1,19 +1,27 @@
 package es.upm.ontology;
 
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: RequestRoverMovement
-* @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:58:52
+* @author ontology bean generator
+* @version 2016/05/22, 14:32:56
 */
-public interface RequestRoverMovement extends jade.content.AgentAction {
+public class RequestRoverMovement implements AgentAction {
 
    /**
    * The direction of the rover movement
-   * Protege name: direction
+* Protege name: direction
    */
-   public void setDirection(Direction value);
-   public Direction getDirection();
+   private Direction direction;
+   public void setDirection(Direction value) { 
+    this.direction=value;
+   }
+   public Direction getDirection() {
+     return this.direction;
+   }
 
 }

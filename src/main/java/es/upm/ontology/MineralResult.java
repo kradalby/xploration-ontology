@@ -1,19 +1,27 @@
 package es.upm.ontology;
 
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: MineralResult
-* @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:58:52
+* @author ontology bean generator
+* @version 2016/05/22, 14:32:56
 */
-public interface MineralResult extends jade.content.AgentAction {
+public class MineralResult implements AgentAction {
 
    /**
    * The mineral result of cell.
-   * Protege name: mineral
+* Protege name: mineral
    */
-   public void setMineral(Mineral value);
-   public Mineral getMineral();
+   private Mineral mineral;
+   public void setMineral(Mineral value) { 
+    this.mineral=value;
+   }
+   public Mineral getMineral() {
+     return this.mineral;
+   }
 
 }

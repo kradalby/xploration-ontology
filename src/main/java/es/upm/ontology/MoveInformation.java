@@ -1,24 +1,37 @@
 package es.upm.ontology;
 
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: MoveInformation
-* @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:58:52
+* @author ontology bean generator
+* @version 2016/05/22, 14:32:56
 */
-public interface MoveInformation extends jade.content.AgentAction {
+public class MoveInformation implements AgentAction {
 
    /**
-   * Protege name: xploration-ontology_Class10003
+* Protege name: RoverLocation
    */
-   public void setXploration_ontology_Class10003(String value);
-   public String getXploration_ontology_Class10003();
+   private Location roverLocation;
+   public void setRoverLocation(Location value) { 
+    this.roverLocation=value;
+   }
+   public Location getRoverLocation() {
+     return this.roverLocation;
+   }
 
    /**
-   * Protege name: RoverLocation
+* Protege name: MoveDirection
    */
-   public void setRoverLocation(Location value);
-   public Location getRoverLocation();
+   private Direction moveDirection;
+   public void setMoveDirection(Direction value) { 
+    this.moveDirection=value;
+   }
+   public Direction getMoveDirection() {
+     return this.moveDirection;
+   }
 
 }

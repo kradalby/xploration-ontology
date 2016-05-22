@@ -3,18 +3,19 @@ package es.upm.ontology;
 
 import jade.content.onto.*;
 import jade.content.schema.*;
+import jade.util.leap.HashMap;
+import jade.content.lang.Codec;
+import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
- * @author OntologyBeanGenerator v4.1
- * @version 2016/05/22, 13:58:52
+ * @author ontology bean generator
+ * @version 2016/05/22, 14:32:56
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
-
-  private static final long serialVersionUID = -2365801926972587165L;
-
   //NAME
   public static final String ONTOLOGY_NAME = "xploration";
   // The singleton instance of this ontology
+  private static ReflectiveIntrospector introspect = new ReflectiveIntrospector();
   private static Ontology theInstance = new XplorationOntology();
   public static Ontology getInstance() {
      return theInstance;
@@ -28,11 +29,10 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     public static final String REQUESTROVERMOVEMENT="RequestRoverMovement";
     public static final String REGISTRATIONREQUEST_COMPANY="company";
     public static final String REGISTRATIONREQUEST="RegistrationRequest";
-    public static final String RELEASECAPSULE_MOVEDIRECTION="MoveDirection";
     public static final String RELEASECAPSULE_LOCATION="location";
     public static final String RELEASECAPSULE="ReleaseCapsule";
+    public static final String MOVEINFORMATION_MOVEDIRECTION="MoveDirection";
     public static final String MOVEINFORMATION_ROVERLOCATION="RoverLocation";
-    public static final String MOVEINFORMATION_XPLORATION_ONTOLOGY_CLASS10003="xploration_ontology_Class10003";
     public static final String MOVEINFORMATION="MoveInformation";
     public static final String PROTOCOL_RELEASE_CAPSULE="PROTOCOL_RELEASE_CAPSULE";
     public static final String PROTOCOL_ROVER_MOVEMENT="PROTOCOL_ROVER_MOVEMENT";
@@ -122,10 +122,9 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     roverSchema.add(ROVER_ROVER_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
     mineralSchema.add(MINERAL_TYPE, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
     directionSchema.add(DIRECTION_X, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
-    moveInformationSchema.add(MOVEINFORMATION_XPLORATION_ONTOLOGY_CLASS10003, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
     moveInformationSchema.add(MOVEINFORMATION_ROVERLOCATION, locationSchema, ObjectSchema.MANDATORY);
+    moveInformationSchema.add(MOVEINFORMATION_MOVEDIRECTION, directionSchema, ObjectSchema.MANDATORY);
     releaseCapsuleSchema.add(RELEASECAPSULE_LOCATION, locationSchema, ObjectSchema.OPTIONAL);
-    releaseCapsuleSchema.add(RELEASECAPSULE_MOVEDIRECTION, directionSchema, ObjectSchema.MANDATORY);
     registrationRequestSchema.add(REGISTRATIONREQUEST_COMPANY, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
     requestRoverMovementSchema.add(REQUESTROVERMOVEMENT_DIRECTION, directionSchema, ObjectSchema.MANDATORY);
     mineralResultSchema.add(MINERALRESULT_MINERAL, mineralSchema, ObjectSchema.OPTIONAL);
@@ -141,4 +140,4 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
 
    }catch (java.lang.Exception e) {e.printStackTrace();}
   }
-}
+  }

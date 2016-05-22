@@ -1,24 +1,37 @@
 package es.upm.ontology;
 
 
+import jade.content.*;
+import jade.util.leap.*;
+import jade.core.*;
 
 /**
 * Protege name: Location
-* @author OntologyBeanGenerator v4.1
-* @version 2016/05/22, 13:58:52
+* @author ontology bean generator
+* @version 2016/05/22, 14:32:56
 */
-public interface Location extends jade.content.Concept {
+public class Location implements Concept {
 
    /**
-   * Protege name: Y
+* Protege name: Y
    */
-   public void setY(int value);
-   public int getY();
+   private int y;
+   public void setY(int value) { 
+    this.y=value;
+   }
+   public int getY() {
+     return this.y;
+   }
 
    /**
-   * Protege name: X
+* Protege name: X
    */
-   public void setX(int value);
-   public int getX();
+   private int x;
+   public void setX(int value) { 
+    this.x=value;
+   }
+   public int getX() {
+     return this.x;
+   }
 
 }
