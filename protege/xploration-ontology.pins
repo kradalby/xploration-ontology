@@ -1,4 +1,3 @@
-; Sun May 22 20:43:55 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -50,6 +49,10 @@
 ([name] of  %3AJADE-SLOT
 
 	(%3AJADE-UNNAMED-SLOT FALSE))
+
+([NotifyWorld] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
 
 ([Predicate] of  %3AJADE-CLASS
 
@@ -107,6 +110,10 @@
 	(%3AJADE-UNNAMED-SLOT FALSE))
 
 ([Rover] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([RoverInitialLocation] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
