@@ -6,11 +6,11 @@ import jade.util.leap.*;
 import jade.core.*;
 
 /**
-* Protege name: ReleaseCapsule
+* Protege name: RoverInitialLocation
 * @author ontology bean generator
 * @version 2016/05/23, 15:21:15
 */
-public class ReleaseCapsule implements AgentAction {
+public class RoverInitialLocation implements Concept {
 
    /**
 * Protege name: location
@@ -21,6 +21,17 @@ public class ReleaseCapsule implements AgentAction {
    }
    public Location getLocation() {
      return this.location;
+   }
+
+   /**
+* Protege name: aid
+   */
+   private AID aid;
+   public void setAid(AID value) { 
+    this.aid=value;
+   }
+   public AID getAid() {
+     return this.aid;
    }
 
 }

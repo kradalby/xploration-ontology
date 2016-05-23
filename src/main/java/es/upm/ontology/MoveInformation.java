@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: MoveInformation
 * @author ontology bean generator
-* @version 2016/05/22, 14:32:56
+* @version 2016/05/23, 15:21:15
 */
 public class MoveInformation implements AgentAction {
 
@@ -21,6 +21,17 @@ public class MoveInformation implements AgentAction {
    }
    public Location getRoverLocation() {
      return this.roverLocation;
+   }
+
+   /**
+* Protege name: aid
+   */
+   private AID aid;
+   public void setAid(AID value) { 
+    this.aid=value;
+   }
+   public AID getAid() {
+     return this.aid;
    }
 
    /**
