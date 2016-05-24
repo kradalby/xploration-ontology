@@ -1,4 +1,4 @@
-; Mon May 23 15:24:40 CEST 2016
+; Tue May 24 19:19:20 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -57,7 +57,7 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "/Users/pranavgautam/IdeaProjects/ABSD/xploration-shared/src/main/java")
+	(%3ALOCATION "/Users/pranavgautam/IdeaProjects/xploration-shared/src/main/java")
 	(%3AONTOLOGYNAME "xploration")
 	(%3APACKAGE "es.upm.ontology")
 	(%3ASUPPORT "j2se"))
@@ -83,6 +83,10 @@
 	(%3AJADE-IGNORE FALSE))
 
 ([PROTOCOL_ROVER_MOVEMENT] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([RegisterAgents] of  %3AJADE-CLASS
 
 	(%3AJADE-IGNORE FALSE))
 
