@@ -8,41 +8,31 @@ import jade.core.*;
 /**
 * Protege name: MoveInformation
 * @author ontology bean generator
-* @version 2016/05/23, 15:21:15
+* @version 2016/05/24, 19:58:34
 */
 public class MoveInformation implements AgentAction {
 
    /**
-* Protege name: RoverLocation
+* Protege name: location
    */
-   private Location roverLocation;
-   public void setRoverLocation(Location value) { 
-    this.roverLocation=value;
+   private Location location;
+   public void setLocation(Location value) { 
+    this.location=value;
    }
-   public Location getRoverLocation() {
-     return this.roverLocation;
+   public Location getLocation() {
+     return this.location;
    }
 
    /**
-* Protege name: aid
+   * The direction of the rover movement
+* Protege name: direction
    */
-   private AID aid;
-   public void setAid(AID value) { 
-    this.aid=value;
+   private Direction direction;
+   public void setDirection(Direction value) { 
+    this.direction=value;
    }
-   public AID getAid() {
-     return this.aid;
-   }
-
-   /**
-* Protege name: MoveDirection
-   */
-   private Direction moveDirection;
-   public void setMoveDirection(Direction value) { 
-    this.moveDirection=value;
-   }
-   public Direction getMoveDirection() {
-     return this.moveDirection;
+   public Direction getDirection() {
+     return this.direction;
    }
 
 }

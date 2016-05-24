@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: Direction
 * @author ontology bean generator
-* @version 2016/05/23, 15:21:15
+* @version 2016/05/24, 19:58:34
 */
 public class Direction implements Concept {
 
