@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
  * @author ontology bean generator
- * @version 2016/05/24, 21:13:14
+ * @version 2016/05/24, 21:16:03
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
   //NAME
