@@ -8,9 +8,20 @@ import jade.core.*;
 /**
 * Protege name: MoveInformation
 * @author ontology bean generator
-* @version 2016/05/24, 19:58:34
+* @version 2016/05/24, 21:13:14
 */
 public class MoveInformation implements AgentAction {
+
+   /**
+* Protege name: rover
+   */
+   private Rover rover;
+   public void setRover(Rover value) { 
+    this.rover=value;
+   }
+   public Rover getRover() {
+     return this.rover;
+   }
 
    /**
 * Protege name: location
