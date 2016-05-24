@@ -1,4 +1,4 @@
-; Tue May 24 19:19:20 CEST 2016
+; Tue May 24 19:21:14 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -689,6 +689,9 @@
 		[KB_030955_Class139]
 		[KB_030955_Class141]))
 
+([KB_135798_Class7] of  Map
+)
+
 ([KB_514774_Class0] of  String
 
 	(name "factory_class_name")
@@ -791,9 +794,6 @@
 		[KB_514774_Class10]
 		[KB_514774_Class11]))
 
-([KB_607355_Class7] of  Map
-)
-
 ([LAYOUT_PROPERTIES] of  Property_List
 
 	(name "layout properties")
@@ -879,8 +879,8 @@
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_030955_Class47]
-		[STANDARD_FACET_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[KB_030955_Class98]
 		[STANDARD_CLASS_FORM_WIDGET])
@@ -1281,8 +1281,8 @@
 
 ([xploration-ontology_ProjectKB_Class10009] of  String
 
-	(name "RegistrationRequest")
-	(string_value "company"))
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
 ([xploration-ontology_ProjectKB_Class10010] of  String
 
@@ -1291,8 +1291,8 @@
 
 ([xploration-ontology_ProjectKB_Class10011] of  String
 
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
+	(name "RegistrationRequest")
+	(string_value "company"))
 
 ([xploration-ontology_ProjectKB_Class10012] of  Map_Entry
 

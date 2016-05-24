@@ -1,4 +1,4 @@
-; Tue May 24 19:19:20 CEST 2016
+; Tue May 24 19:21:14 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -15,13 +15,13 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot Y
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3APACKAGE
 ;+		(comment "packagename")
 		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Y
-		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot X
@@ -83,14 +83,14 @@
 		(range 1 6)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot %3AJADE-JAVA-CODE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot mineral
 ;+		(comment "The mineral result of cell.")
 		(type INSTANCE)
 ;+		(allowed-classes Mineral)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3AJADE-JAVA-CODE
-		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-IGNORE
@@ -99,14 +99,14 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot %3AJADE-INCLUDED-PROPERTIES
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
 	(single-slot RoverLocation
 		(type INSTANCE)
 ;+		(allowed-classes Location)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot %3AJADE-INCLUDED-PROPERTIES
-		(type INSTANCE)
-;+		(allowed-classes)
 		(create-accessor read-write))
 	(single-slot rover_agent
 		(type INSTANCE)
@@ -176,13 +176,13 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10002
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot company_agent
 		(type INSTANCE)
 ;+		(allowed-classes AID)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot xploration-ontology_Class10002
-		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot xploration-ontology_Class10003
