@@ -1,4 +1,4 @@
-; Thu May 26 11:36:13 CEST 2016
+; Thu May 26 13:22:02 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -115,7 +115,7 @@
 	(single-slot findings
 		(type INSTANCE)
 ;+		(allowed-classes Findings)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-DIRECTORY
 		(type STRING)
@@ -148,6 +148,10 @@
 		(type SYMBOL)
 		(allowed-values J2ME JavaBeans Classes)
 		(default Classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10000
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot xploration-ontology_Class10001
@@ -330,7 +334,7 @@
 	(role concrete)
 	(single-slot company
 		(type STRING)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass ReleaseCapsule
@@ -359,7 +363,7 @@
 ;+		(comment "The mineral result of cell.")
 		(type INSTANCE)
 ;+		(allowed-classes Mineral)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass MoveInformation
@@ -446,11 +450,11 @@
 	(role concrete)
 	(single-slot X
 		(type INTEGER)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot Y
 		(type INTEGER)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Direction
@@ -519,7 +523,7 @@
 	(single-slot type
 ;+		(comment "The mineral result type of the cell.")
 		(type STRING)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Frequency
@@ -542,7 +546,7 @@
 ;+		(comment "The mineral result of cell.")
 		(type INSTANCE)
 ;+		(allowed-classes Mineral)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Findings

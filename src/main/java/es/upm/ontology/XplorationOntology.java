@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
  * @author ontology bean generator
- * @version 2016/05/26, 11:36:11
+ * @version 2016/05/26, 13:21:58
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -157,7 +157,7 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     roverSchema.add(ROVER_ROVER_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
     findingsSchema.add(FINDINGS_FINDING, findingSchema, 0, ObjectSchema.UNLIMITED);
     findingsMessageSchema.add(FINDINGSMESSAGE_FREQUENCY, frequencySchema, ObjectSchema.OPTIONAL);
-    findingsMessageSchema.add(FINDINGSMESSAGE_FINDINGS, findingsSchema, ObjectSchema.OPTIONAL);
+    findingsMessageSchema.add(FINDINGSMESSAGE_FINDINGS, findingsSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_LOCATION, locationSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_DIRECTION, directionSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_ROVER, roverSchema, ObjectSchema.MANDATORY);
