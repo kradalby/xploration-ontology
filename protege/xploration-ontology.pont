@@ -1,4 +1,4 @@
-; Thu May 26 13:22:02 CEST 2016
+; Thu May 26 14:02:16 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -555,6 +555,7 @@
 	(multislot finding
 		(type INSTANCE)
 ;+		(allowed-classes Finding)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write)))
 
 (defclass Predicate "The common ancestor for all predicates in an ontology (e.g. FatherOf...)"
