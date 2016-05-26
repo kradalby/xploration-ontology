@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
  * @author ontology bean generator
- * @version 2016/05/26, 10:42:39
+ * @version 2016/05/26, 11:36:11
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -38,9 +38,10 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     public static final String MOVEINFORMATION_DIRECTION="direction";
     public static final String MOVEINFORMATION_LOCATION="location";
     public static final String MOVEINFORMATION="MoveInformation";
+    public static final String FINDINGSMESSAGE_FINDINGS="findings";
+    public static final String FINDINGSMESSAGE_FREQUENCY="frequency";
     public static final String FINDINGSMESSAGE="FindingsMessage";
     public static final String FINDINGS_FINDING="finding";
-    public static final String FINDINGS_FREQUENCY="frequency";
     public static final String FINDINGS="Findings";
     public static final String PROTOCOL_ANALYZE_MINERAL="PROTOCOL_ANALYZE_MINERAL";
     public static final String PROTOCOL_UPDATE_FINDINGS="PROTOCOL_UPDATE_FINDINGS";
@@ -154,8 +155,9 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     frequencySchema.add(FREQUENCY_CHANNEL, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
     roverSchema.add(ROVER_NAME, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.MANDATORY);
     roverSchema.add(ROVER_ROVER_AGENT, (ConceptSchema)getSchema(BasicOntology.AID), ObjectSchema.OPTIONAL);
-    findingsSchema.add(FINDINGS_FREQUENCY, frequencySchema, ObjectSchema.OPTIONAL);
     findingsSchema.add(FINDINGS_FINDING, findingSchema, 0, ObjectSchema.UNLIMITED);
+    findingsMessageSchema.add(FINDINGSMESSAGE_FREQUENCY, frequencySchema, ObjectSchema.OPTIONAL);
+    findingsMessageSchema.add(FINDINGSMESSAGE_FINDINGS, findingsSchema, ObjectSchema.OPTIONAL);
     moveInformationSchema.add(MOVEINFORMATION_LOCATION, locationSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_DIRECTION, directionSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_ROVER, roverSchema, ObjectSchema.MANDATORY);

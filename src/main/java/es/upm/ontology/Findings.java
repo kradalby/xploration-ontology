@@ -8,20 +8,9 @@ import jade.core.*;
 /**
 * Protege name: Findings
 * @author ontology bean generator
-* @version 2016/05/26, 10:42:39
+* @version 2016/05/26, 11:36:11
 */
 public class Findings implements Concept {
-
-   /**
-* Protege name: frequency
-   */
-   private Frequency frequency;
-   public void setFrequency(Frequency value) { 
-    this.frequency=value;
-   }
-   public Frequency getFrequency() {
-     return this.frequency;
-   }
 
    /**
 * Protege name: finding

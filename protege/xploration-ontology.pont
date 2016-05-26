@@ -1,4 +1,4 @@
-; Thu May 26 10:42:41 CEST 2016
+; Thu May 26 11:36:13 CEST 2016
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -112,6 +112,11 @@
 ;+		(allowed-classes Capsule)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot findings
+		(type INSTANCE)
+;+		(allowed-classes Findings)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3AJADE-PROPERTIES-DIRECTORY
 		(type STRING)
 ;+		(cardinality 0 1)
@@ -143,6 +148,11 @@
 		(type SYMBOL)
 		(allowed-values J2ME JavaBeans Classes)
 		(default Classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot xploration-ontology_Class10001
+		(type INSTANCE)
+;+		(allowed-classes)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot rover_agent
@@ -388,7 +398,17 @@
 
 (defclass FindingsMessage
 	(is-a AgentAction)
-	(role concrete))
+	(role concrete)
+	(single-slot frequency
+		(type INSTANCE)
+;+		(allowed-classes Frequency)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot findings
+		(type INSTANCE)
+;+		(allowed-classes Findings)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
 
 (defclass Company
 	(is-a Concept)
@@ -528,11 +548,6 @@
 (defclass Findings
 	(is-a Concept)
 	(role concrete)
-	(single-slot frequency
-		(type INSTANCE)
-;+		(allowed-classes Frequency)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(multislot finding
 		(type INSTANCE)
 ;+		(allowed-classes Finding)
