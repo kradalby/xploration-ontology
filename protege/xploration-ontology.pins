@@ -1,7 +1,7 @@
-; Thu May 26 14:02:16 CEST 2016
+; Mon May 30 16:47:08 CEST 2016
 ; 
 ;+ (version "3.5")
-;+ (build "Build 660")
+;+ (build "Build 663")
 
 ([addresses] of  %3AJADE-SLOT
 
@@ -73,7 +73,7 @@
 
 ([project+annotation] of  %3APROJECT-ANNOTATION
 
-	(%3ALOCATION "C:\\Users\\onezero\\Documents\\GitHub\\xploration-shared\\src\\main\\java")
+	(%3ALOCATION "/Users/borismakogonyuk/Documents/Projects/Java/AgentBasedDevelopment/Shared/src/main/java")
 	(%3AONTOLOGYNAME "xploration")
 	(%3APACKAGE "es.upm.ontology")
 	(%3ASUPPORT "j2se"))

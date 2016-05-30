@@ -8,9 +8,31 @@ import jade.core.*;
 /**
 * Protege name: ReleaseCapsule
 * @author ontology bean generator
-* @version 2016/05/26, 14:02:25
+* @version 2016/05/30, 16:51:40
 */
 public class ReleaseCapsule implements AgentAction {
+
+   /**
+* Protege name: sizeX
+   */
+   private int sizeX;
+   public void setSizeX(int value) { 
+    this.sizeX=value;
+   }
+   public int getSizeX() {
+     return this.sizeX;
+   }
+
+   /**
+* Protege name: sizeY
+   */
+   private int sizeY;
+   public void setSizeY(int value) { 
+    this.sizeY=value;
+   }
+   public int getSizeY() {
+     return this.sizeY;
+   }
 
    /**
 * Protege name: location
