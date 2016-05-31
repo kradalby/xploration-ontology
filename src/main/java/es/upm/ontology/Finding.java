@@ -8,20 +8,9 @@ import jade.core.*;
 /**
 * Protege name: Finding
 * @author ontology bean generator
-* @version 2016/05/26, 14:02:25
+* @version 2016/05/31, 12:16:18
 */
 public class Finding implements Concept {
-
-   /**
-* Protege name: location
-   */
-   private Location location;
-   public void setLocation(Location value) { 
-    this.location=value;
-   }
-   public Location getLocation() {
-     return this.location;
-   }
 
    /**
    * The mineral result of cell.
@@ -33,6 +22,17 @@ public class Finding implements Concept {
    }
    public Mineral getMineral() {
      return this.mineral;
+   }
+
+   /**
+* Protege name: location
+   */
+   private Location location;
+   public void setLocation(Location value) { 
+    this.location=value;
+   }
+   public Location getLocation() {
+     return this.location;
    }
 
 }

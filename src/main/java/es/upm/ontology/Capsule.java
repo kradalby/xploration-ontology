@@ -8,9 +8,20 @@ import jade.core.*;
 /**
 * Protege name: Capsule
 * @author ontology bean generator
-* @version 2016/05/26, 14:02:25
+* @version 2016/05/31, 12:16:18
 */
 public class Capsule implements Concept {
+
+   /**
+* Protege name: rover
+   */
+   private Rover rover;
+   public void setRover(Rover value) { 
+    this.rover=value;
+   }
+   public Rover getRover() {
+     return this.rover;
+   }
 
    /**
 * Protege name: name
@@ -32,17 +43,6 @@ public class Capsule implements Concept {
    }
    public AID getCapsule_agent() {
      return this.capsule_agent;
-   }
-
-   /**
-* Protege name: rover
-   */
-   private Rover rover;
-   public void setRover(Rover value) { 
-    this.rover=value;
-   }
-   public Rover getRover() {
-     return this.rover;
    }
 
 }

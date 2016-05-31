@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: ReleaseCapsule
 * @author ontology bean generator
-* @version 2016/05/30, 16:51:40
+* @version 2016/05/31, 12:16:18
 */
 public class ReleaseCapsule implements AgentAction {
 

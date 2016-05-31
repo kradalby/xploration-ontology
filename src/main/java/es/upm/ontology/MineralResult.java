@@ -8,7 +8,7 @@ import jade.core.*;
 /**
 * Protege name: MineralResult
 * @author ontology bean generator
-* @version 2016/05/26, 14:02:25
+* @version 2016/05/31, 12:16:18
 */
 public class MineralResult implements AgentAction {
 

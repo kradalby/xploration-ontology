@@ -9,7 +9,7 @@ import jade.core.CaseInsensitiveString;
 
 /** file: XplorationOntology.java
  * @author ontology bean generator
- * @version 2016/05/30, 16:51:40
+ * @version 2016/05/31, 12:16:18
  */
 public class XplorationOntology extends jade.content.onto.Ontology  {
   //NAME
@@ -165,8 +165,8 @@ public class XplorationOntology extends jade.content.onto.Ontology  {
     moveInformationSchema.add(MOVEINFORMATION_ROVER, roverSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_LOCATION, locationSchema, ObjectSchema.MANDATORY);
     moveInformationSchema.add(MOVEINFORMATION_DIRECTION, directionSchema, ObjectSchema.MANDATORY);
-    releaseCapsuleSchema.add(RELEASECAPSULE_SIZEX, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);
-    releaseCapsuleSchema.add(RELEASECAPSULE_SIZEY, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.OPTIONAL);
+    releaseCapsuleSchema.add(RELEASECAPSULE_SIZEX, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
+    releaseCapsuleSchema.add(RELEASECAPSULE_SIZEY, (TermSchema)getSchema(BasicOntology.INTEGER), ObjectSchema.MANDATORY);
     releaseCapsuleSchema.add(RELEASECAPSULE_LOCATION, locationSchema, ObjectSchema.MANDATORY);
     registrationRequestSchema.add(REGISTRATIONREQUEST_COMPANY, (TermSchema)getSchema(BasicOntology.STRING), ObjectSchema.OPTIONAL);
     requestRoverMovementSchema.add(REQUESTROVERMOVEMENT_DIRECTION, directionSchema, ObjectSchema.MANDATORY);
